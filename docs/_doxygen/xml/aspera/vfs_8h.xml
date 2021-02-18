@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="vfs_8h" kind="file" language="C++">
+    <compoundname>vfs.h</compoundname>
+    <includes local="no">stddef.h</includes>
+    <includedby refid="vfs_8c" local="no">/home/luke/le/aspera/aspera/fs/vfs.c</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>stddef.h</label>
+      </node>
+      <node id="1">
+        <label>/home/luke/le/aspera/aspera/include/fs/vfs.h</label>
+        <link refid="vfs_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structfs" prot="public">fs</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="vfs_8h_1a17cf47cf19fcb9c0c94ec3743efb3972" prot="public" static="no">
+        <type>struct <ref refid="structFILE" kindref="compound">FILE</ref></type>
+        <definition>typedef struct FILE FILE</definition>
+        <argsstring></argsstring>
+        <name>FILE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/fs/vfs.h" line="1" column="0" bodyfile="/home/luke/le/aspera/aspera/include/fs/vfs.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="vfs_8h_1a5a9a7058a9a51db691a0fd5bb6f032d7" prot="public" static="no" mutable="no">
+        <type>ruct</type>
+        <definition>ruct fperm</definition>
+        <argsstring></argsstring>
+        <name>fperm</name>
+        <initializer>{
+	int l : 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/fs/vfs.h" line="15" column="6" bodyfile="/home/luke/le/aspera/aspera/include/fs/vfs.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vfs_8h_1acab531abaa74a7e664e3986f2522b33a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/fs/vfs.h" line="17" column="5" bodyfile="/home/luke/le/aspera/aspera/include/fs/vfs.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vfs_8h_1aac374e320caaadeca4874add33b62af2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/fs/vfs.h" line="18" column="5" bodyfile="/home/luke/le/aspera/aspera/include/fs/vfs.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vfs_8h_1a6150e0515f7202e2fb518f7206ed97dc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/fs/vfs.h" line="19" column="5" bodyfile="/home/luke/le/aspera/aspera/include/fs/vfs.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="vfs_8h_1a540c2751062f6ba071860eaea23a1430" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structFILE" kindref="compound">FILE</ref> *</type>
+        <definition>FILE* file_req</definition>
+        <argsstring>(const char *path, struct fperm perm)</argsstring>
+        <name>file_req</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>struct fperm</type>
+          <declname>perm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/fs/vfs.h" line="21" column="6" bodyfile="/home/luke/le/aspera/aspera/fs/vfs.c" bodystart="22" bodyend="25" declfile="/home/luke/le/aspera/aspera/include/fs/vfs.h" declline="21" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="vfs_8h_1ae9f9f85dcc6b3c02fbc9e951b9a7481c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int file_open_req</definition>
+        <argsstring>(FILE *file)</argsstring>
+        <name>file_open_req</name>
+        <param>
+          <type><ref refid="structFILE" kindref="compound">FILE</ref> *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/fs/vfs.h" line="22" column="5" declfile="/home/luke/le/aspera/aspera/include/fs/vfs.h" declline="22" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="vfs_8h_1a8f057e751af81240c95bbcf3bf539ab5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int file_open_reqs</definition>
+        <argsstring>(int filec, FILE **filev)</argsstring>
+        <name>file_open_reqs</name>
+        <param>
+          <type>int</type>
+          <declname>filec</declname>
+        </param>
+        <param>
+          <type><ref refid="structFILE" kindref="compound">FILE</ref> **</type>
+          <declname>filev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/fs/vfs.h" line="23" column="5" declfile="/home/luke/le/aspera/aspera/include/fs/vfs.h" declline="23" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="vfs_8h_1a67dd2b97cdacbe277ca5914201c41a2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int file_close</definition>
+        <argsstring>(FILE *node)</argsstring>
+        <name>file_close</name>
+        <param>
+          <type><ref refid="structFILE" kindref="compound">FILE</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/fs/vfs.h" line="24" column="5" declfile="/home/luke/le/aspera/aspera/include/fs/vfs.h" declline="24" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="vfs_8h_1ac82afc11693e7546a7f0d84947a4fa55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int fs_reg</definition>
+        <argsstring>(struct fs *fs, const char *path)</argsstring>
+        <name>fs_reg</name>
+        <param>
+          <type>struct <ref refid="structfs" kindref="compound">fs</ref> *</type>
+          <declname>fs</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/fs/vfs.h" line="25" column="5" declfile="/home/luke/le/aspera/aspera/include/fs/vfs.h" declline="25" declcolumn="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__VFS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__VFS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structFILE" kindref="compound">FILE</ref><sp/><ref refid="structFILE" kindref="compound">FILE</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structfs" kindref="compound">fs</ref>;</highlight></codeline>
+<codeline lineno="8" refid="structfs" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structfs" kindref="compound">fs</ref><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*open)(<ref refid="structFILE" kindref="compound">FILE</ref><sp/>*stream);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*close)(<ref refid="structFILE" kindref="compound">FILE</ref><sp/>*stream);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>size_t<sp/>(*write)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*buf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>count,<sp/><ref refid="structFILE" kindref="compound">FILE</ref><sp/>*stream);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>size_t<sp/>(*read)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*buf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>count,<sp/><ref refid="structFILE" kindref="compound">FILE</ref><sp/>*stream);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>(*exec)(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**argv,<sp/><ref refid="structFILE" kindref="compound">FILE</ref><sp/>*file);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">ruct<sp/>fperm<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>l<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>r<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><ref refid="structFILE" kindref="compound">FILE</ref><sp/>*file_req(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structpath" kindref="compound">path</ref>,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>fperm<sp/>perm);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>file_open_req(<ref refid="structFILE" kindref="compound">FILE</ref><sp/>*file);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>file_open_reqs(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filec,<sp/><ref refid="structFILE" kindref="compound">FILE</ref><sp/>**filev);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>file_close(<ref refid="structFILE" kindref="compound">FILE</ref><sp/>*node);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fs_reg(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structfs" kindref="compound">fs</ref>*<sp/><ref refid="structfs" kindref="compound">fs</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structpath" kindref="compound">path</ref>);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__VFS_H_</highlight></codeline>
+    </programlisting>
+    <location file="/home/luke/le/aspera/aspera/include/fs/vfs.h"/>
+  </compounddef>
+</doxygen>

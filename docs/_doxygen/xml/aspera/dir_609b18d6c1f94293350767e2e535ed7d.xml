@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="dir_609b18d6c1f94293350767e2e535ed7d" kind="dir">
+    <compoundname>/home/luke/le/aspera/aspera/arch/i386</compoundname>
+    <innerdir refid="dir_b761f2699491559bde4aff2ca9cbc985">/home/luke/le/aspera/aspera/arch/i386/boot</innerdir>
+    <innerfile refid="tty_8c">tty.c</innerfile>
+    <innerfile refid="vga_8h">vga.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/luke/le/aspera/aspera/arch/i386/"/>
+  </compounddef>
+</doxygen>

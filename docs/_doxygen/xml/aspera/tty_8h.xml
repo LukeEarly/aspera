@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="tty_8h" kind="file" language="C++">
+    <compoundname>tty.h</compoundname>
+    <includes local="no">stddef.h</includes>
+    <includedby refid="check_8c" local="no">/home/luke/le/aspera/aspera/arch/i386/boot/multiboot/check.c</includedby>
+    <includedby refid="tty_8c" local="no">/home/luke/le/aspera/aspera/arch/i386/tty.c</includedby>
+    <includedby refid="entry_8c" local="no">/home/luke/le/aspera/aspera/init/entry.c</includedby>
+    <includedby refid="init_8c" local="no">/home/luke/le/aspera/aspera/init/irfs/init.c</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>stddef.h</label>
+      </node>
+      <node id="1">
+        <label>/home/luke/le/aspera/aspera/include/aspera/tty.h</label>
+        <link refid="tty_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structansi__color" prot="public">ansi_color</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="tty_8h_1a6d15eea7355dd146b1d99186ded05d15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void terminal_init</definition>
+        <argsstring>()</argsstring>
+        <name>terminal_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/aspera/tty.h" line="19" column="6" bodyfile="/home/luke/le/aspera/aspera/arch/i386/tty.c" bodystart="48" bodyend="58" declfile="/home/luke/le/aspera/aspera/include/aspera/tty.h" declline="19" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="tty_8h_1adc2794863d3e934b68a917ca92db59a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int terminal_putchar</definition>
+        <argsstring>(char c)</argsstring>
+        <name>terminal_putchar</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/aspera/tty.h" line="20" column="5" bodyfile="/home/luke/le/aspera/aspera/arch/i386/tty.c" bodystart="70" bodyend="81" declfile="/home/luke/le/aspera/aspera/include/aspera/tty.h" declline="20" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="tty_8h_1a87ddca701acbf401bb915c6219880c46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void terminal_write</definition>
+        <argsstring>(const char *ptr, size_t len)</argsstring>
+        <name>terminal_write</name>
+        <param>
+          <type>const char *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/aspera/tty.h" line="21" column="6" bodyfile="/home/luke/le/aspera/aspera/arch/i386/tty.c" bodystart="83" bodyend="88" declfile="/home/luke/le/aspera/aspera/include/aspera/tty.h" declline="21" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="tty_8h_1acba38442791031347a2ebf41dbe78929" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void terminal_printf</definition>
+        <argsstring>(const char *format,...)</argsstring>
+        <name>terminal_printf</name>
+        <param>
+          <type>const char *</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/aspera/tty.h" line="22" column="6" bodyfile="/home/luke/le/aspera/aspera/arch/i386/tty.c" bodystart="96" bodyend="169" declfile="/home/luke/le/aspera/aspera/include/aspera/tty.h" declline="22" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="tty_8h_1a6f5c40c8c6594d789ddbaa8090e4eb33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void terminal_puts</definition>
+        <argsstring>(const char *str)</argsstring>
+        <name>terminal_puts</name>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/aspera/tty.h" line="23" column="6" bodyfile="/home/luke/le/aspera/aspera/arch/i386/tty.c" bodystart="90" bodyend="94" declfile="/home/luke/le/aspera/aspera/include/aspera/tty.h" declline="23" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="tty_8h_1aebd5347a31e088192ad1d935123f3495" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void terminal_scroll</definition>
+        <argsstring>(size_t rows)</argsstring>
+        <name>terminal_scroll</name>
+        <param>
+          <type>size_t</type>
+          <declname>rows</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/aspera/tty.h" line="24" column="6" bodyfile="/home/luke/le/aspera/aspera/arch/i386/tty.c" bodystart="171" bodyend="185" declfile="/home/luke/le/aspera/aspera/include/aspera/tty.h" declline="24" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="tty_8h_1a2bf0ae8078fecf76f40197ece83b2d78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void terminal_clear</definition>
+        <argsstring>()</argsstring>
+        <name>terminal_clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/aspera/tty.h" line="25" column="6" bodyfile="/home/luke/le/aspera/aspera/arch/i386/tty.c" bodystart="60" bodyend="68" declfile="/home/luke/le/aspera/aspera/include/aspera/tty.h" declline="25" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="tty_8h_1a1207bc497c8746b29b7b268042299a0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void terminal_setcolors</definition>
+        <argsstring>(struct ansi_color fg, struct ansi_color bg)</argsstring>
+        <name>terminal_setcolors</name>
+        <param>
+          <type>struct <ref refid="structansi__color" kindref="compound">ansi_color</ref></type>
+          <declname>fg</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structansi__color" kindref="compound">ansi_color</ref></type>
+          <declname>bg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/aspera/tty.h" line="26" column="6" bodyfile="/home/luke/le/aspera/aspera/arch/i386/tty.c" bodystart="187" bodyend="192" declfile="/home/luke/le/aspera/aspera/include/aspera/tty.h" declline="26" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__TTY_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__TTY_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="structansi__color" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structansi__color" kindref="compound">ansi_color</ref><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ANSI_BLACK<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ANSI_RED<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ANSI_GREEN<sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ANSI_YELLOW<sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ANSI_BLUE<sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ANSI_MAGENTA<sp/>=<sp/>5,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ANSI_CYAN<sp/>=<sp/>6,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ANSI_WHITE<sp/>=<sp/>7</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>color;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bright<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>terminal_init();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>terminal_putchar(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>terminal_write(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>ptr,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>terminal_printf(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*format,<sp/>...);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>terminal_puts(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>str);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>terminal_scroll(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>rows);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>terminal_clear();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>terminal_setcolors(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structansi__color" kindref="compound">ansi_color</ref><sp/>fg,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structansi__color" kindref="compound">ansi_color</ref><sp/>bg);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__TTY_H_</highlight></codeline>
+    </programlisting>
+    <location file="/home/luke/le/aspera/aspera/include/aspera/tty.h"/>
+  </compounddef>
+</doxygen>

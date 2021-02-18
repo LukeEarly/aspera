@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structmnt" kind="struct" language="C++" prot="public">
+    <compoundname>mnt</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmnt_1a5e5e5b9908f43dabef980c03c812dec1" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structpath" kindref="compound">path</ref></type>
+        <definition>struct path mnt::path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/fs/vfs.c" line="14" column="8" bodyfile="/home/luke/le/aspera/aspera/fs/vfs.c" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmnt_1a75f9902424db4b62ba46e076e548cdd7" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structfs" kindref="compound">fs</ref></type>
+        <definition>struct fs mnt::fs</definition>
+        <argsstring></argsstring>
+        <name>fs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/fs/vfs.c" line="14" column="8" bodyfile="/home/luke/le/aspera/aspera/fs/vfs.c" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>path</label>
+        <link refid="structpath"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mnt</label>
+        <link refid="structmnt"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>path</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>fs</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>fs</label>
+        <link refid="structfs"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/luke/le/aspera/aspera/fs/vfs.c" line="17" column="1" bodyfile="/home/luke/le/aspera/aspera/fs/vfs.c" bodystart="17" bodyend="20"/>
+    <listofallmembers>
+      <member refid="structmnt_1a75f9902424db4b62ba46e076e548cdd7" prot="public" virt="non-virtual"><scope>mnt</scope><name>fs</name></member>
+      <member refid="structmnt_1a5e5e5b9908f43dabef980c03c812dec1" prot="public" virt="non-virtual"><scope>mnt</scope><name>path</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

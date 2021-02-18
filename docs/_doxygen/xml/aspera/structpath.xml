@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structpath" kind="struct" language="C++" prot="public">
+    <compoundname>path</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpath_1a90b4e69e79ffcab58317188012e7da1f" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* path::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/fs/vfs.c" line="5" column="6" bodyfile="/home/luke/le/aspera/aspera/fs/vfs.c" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpath_1afaef41c6883b6ced7684ef1723d9833d" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structpath" kindref="compound">path</ref> *</type>
+        <definition>struct path* path::parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/fs/vfs.c" line="6" column="11" bodyfile="/home/luke/le/aspera/aspera/fs/vfs.c" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>path</label>
+        <link refid="structpath"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/luke/le/aspera/aspera/fs/vfs.c" line="4" column="1" bodyfile="/home/luke/le/aspera/aspera/fs/vfs.c" bodystart="4" bodyend="7"/>
+    <listofallmembers>
+      <member refid="structpath_1a90b4e69e79ffcab58317188012e7da1f" prot="public" virt="non-virtual"><scope>path</scope><name>name</name></member>
+      <member refid="structpath_1afaef41c6883b6ced7684ef1723d9833d" prot="public" virt="non-virtual"><scope>path</scope><name>parent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

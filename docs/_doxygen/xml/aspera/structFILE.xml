@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structFILE" kind="struct" language="C++" prot="public">
+    <compoundname>FILE</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structFILE_1a6170ee9ce3504a840e41be0c562f7a35" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* FILE::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/fs/vfs.c" line="10" column="6" bodyfile="/home/luke/le/aspera/aspera/fs/vfs.c" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFILE_1a3e782fb1396917fc6bb541a771ef5556" prot="public" static="no" mutable="no">
+        <type>struct file *</type>
+        <definition>struct file* FILE::parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/fs/vfs.c" line="11" column="11" bodyfile="/home/luke/le/aspera/aspera/fs/vfs.c" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFILE_1a4fc7f0d4d74019940f7ce2547e562235" prot="public" static="no" mutable="no">
+        <type>struct fperm</type>
+        <definition>struct fperm FILE::perm</definition>
+        <argsstring></argsstring>
+        <name>perm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/fs/vfs.c" line="11" column="11" bodyfile="/home/luke/le/aspera/aspera/fs/vfs.c" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFILE_1a4b202e34ca5d3b5403adf2a203741099" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structfs" kindref="compound">fs</ref> *</type>
+        <definition>struct fs* FILE::fs</definition>
+        <argsstring></argsstring>
+        <name>fs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/fs/vfs.c" line="13" column="9" bodyfile="/home/luke/le/aspera/aspera/fs/vfs.c" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFILE_1a1ec4a59270185089d88a922840bc169a" prot="public" static="no" mutable="no">
+        <type>fpos_t</type>
+        <definition>fpos_t FILE::cursor</definition>
+        <argsstring></argsstring>
+        <name>cursor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/fs/vfs.c" line="14" column="8" bodyfile="/home/luke/le/aspera/aspera/fs/vfs.c" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>fs</label>
+        <link refid="structfs"/>
+      </node>
+      <node id="1">
+        <label>FILE</label>
+        <link refid="structFILE"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>fs</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/luke/le/aspera/aspera/fs/vfs.c" line="9" column="1" bodyfile="/home/luke/le/aspera/aspera/fs/vfs.c" bodystart="9" bodyend="15"/>
+    <listofallmembers>
+      <member refid="structFILE_1a1ec4a59270185089d88a922840bc169a" prot="public" virt="non-virtual"><scope>FILE</scope><name>cursor</name></member>
+      <member refid="structFILE_1a4b202e34ca5d3b5403adf2a203741099" prot="public" virt="non-virtual"><scope>FILE</scope><name>fs</name></member>
+      <member refid="structFILE_1a6170ee9ce3504a840e41be0c562f7a35" prot="public" virt="non-virtual"><scope>FILE</scope><name>name</name></member>
+      <member refid="structFILE_1a3e782fb1396917fc6bb541a771ef5556" prot="public" virt="non-virtual"><scope>FILE</scope><name>parent</name></member>
+      <member refid="structFILE_1a4fc7f0d4d74019940f7ce2547e562235" prot="public" virt="non-virtual"><scope>FILE</scope><name>perm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

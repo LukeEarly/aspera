@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structphys__chunks" kind="struct" language="C++" prot="public">
+    <compoundname>phys_chunks</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structphys__chunks_1abe6b1ae901d3edc6cd35fea8f4b5ca96" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t phys_chunks::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/mm/phys.h" line="12" column="10" bodyfile="/home/luke/le/aspera/aspera/include/mm/phys.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structphys__chunks_1a9040eb35b7a6efd1debd2130f24152ac" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structphys__chunk" kindref="compound">phys_chunk</ref></type>
+        <definition>struct phys_chunk phys_chunks::chunks[]</definition>
+        <argsstring>[]</argsstring>
+        <name>chunks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/mm/phys.h" line="12" column="10" bodyfile="/home/luke/le/aspera/aspera/include/mm/phys.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>phys_chunk</label>
+        <link refid="structphys__chunk"/>
+      </node>
+      <node id="1">
+        <label>phys_chunks</label>
+        <link refid="structphys__chunks"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>chunks</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/luke/le/aspera/aspera/include/mm/phys.h" line="11" column="1" bodyfile="/home/luke/le/aspera/aspera/include/mm/phys.h" bodystart="11" bodyend="14"/>
+    <listofallmembers>
+      <member refid="structphys__chunks_1a9040eb35b7a6efd1debd2130f24152ac" prot="public" virt="non-virtual"><scope>phys_chunks</scope><name>chunks</name></member>
+      <member refid="structphys__chunks_1abe6b1ae901d3edc6cd35fea8f4b5ca96" prot="public" virt="non-virtual"><scope>phys_chunks</scope><name>count</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

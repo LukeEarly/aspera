@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structirfs__dirent" kind="struct" language="C++" prot="public">
+    <compoundname>irfs_dirent</compoundname>
+    <includes refid="irfs_8h" local="no">irfs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structirfs__dirent_1a0f1ae7a552122fb77b19667378a70ce7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t irfs_dirent::namelen</definition>
+        <argsstring></argsstring>
+        <name>namelen</name>
+        <briefdescription>
+<para>length of name, in words </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/init/irfs.h" line="49" column="10" bodyfile="/home/luke/le/aspera/aspera/include/init/irfs.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structirfs__dirent_1ab72c047a498a238fb12887c5eee7b28f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t irfs_dirent::nameptr</definition>
+        <argsstring></argsstring>
+        <name>nameptr</name>
+        <briefdescription>
+<para>offset of name from start of heap, in words </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/init/irfs.h" line="50" column="10" bodyfile="/home/luke/le/aspera/aspera/include/init/irfs.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structirfs__dirent_1af7ea13703649c306cbcf2b85171e0732" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t irfs_dirent::inode</definition>
+        <argsstring></argsstring>
+        <name>inode</name>
+        <briefdescription>
+<para>inode number </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/init/irfs.h" line="51" column="10" bodyfile="/home/luke/le/aspera/aspera/include/init/irfs.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Entry in directory table. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/luke/le/aspera/aspera/include/init/irfs.h" line="48" column="1" bodyfile="/home/luke/le/aspera/aspera/include/init/irfs.h" bodystart="48" bodyend="52"/>
+    <listofallmembers>
+      <member refid="structirfs__dirent_1af7ea13703649c306cbcf2b85171e0732" prot="public" virt="non-virtual"><scope>irfs_dirent</scope><name>inode</name></member>
+      <member refid="structirfs__dirent_1a0f1ae7a552122fb77b19667378a70ce7" prot="public" virt="non-virtual"><scope>irfs_dirent</scope><name>namelen</name></member>
+      <member refid="structirfs__dirent_1ab72c047a498a238fb12887c5eee7b28f" prot="public" virt="non-virtual"><scope>irfs_dirent</scope><name>nameptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

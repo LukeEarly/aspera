@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="dir_96531b204d286c2b6601905b69363744" kind="dir">
+    <compoundname>/home/luke/le/aspera/aspera/include</compoundname>
+    <innerdir refid="dir_c0655a3e2987547608675e09c639a275">/home/luke/le/aspera/aspera/include/aspera</innerdir>
+    <innerdir refid="dir_f57cac16f255601edb963b156384f20d">/home/luke/le/aspera/aspera/include/fs</innerdir>
+    <innerdir refid="dir_dacbfbc7fa691c1b79db6c9d7ed5483d">/home/luke/le/aspera/aspera/include/init</innerdir>
+    <innerdir refid="dir_aef60c5e52723a0cb457b87fbf826e5b">/home/luke/le/aspera/aspera/include/mm</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/luke/le/aspera/aspera/include/"/>
+  </compounddef>
+</doxygen>

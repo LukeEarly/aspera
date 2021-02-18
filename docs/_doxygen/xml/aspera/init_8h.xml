@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="init_8h" kind="file" language="C++">
+    <compoundname>init.h</compoundname>
+    <includedby refid="entry_8c" local="no">/home/luke/le/aspera/aspera/init/entry.c</includedby>
+    <includedby refid="init_8c" local="no">/home/luke/le/aspera/aspera/init/irfs/init.c</includedby>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="init_8h_1a875bf389ea94f2bb5eb6cf5bc028c82b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int init_mm</definition>
+        <argsstring>()</argsstring>
+        <name>init_mm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/init/init.h" line="4" column="5" declfile="/home/luke/le/aspera/aspera/include/init/init.h" declline="4" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="init_8h_1a6dd87095a3c164dbf14053ad4bd697c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int init_irfs</definition>
+        <argsstring>()</argsstring>
+        <name>init_irfs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/init/init.h" line="5" column="5" bodyfile="/home/luke/le/aspera/aspera/init/irfs/init.c" bodystart="5" bodyend="19" declfile="/home/luke/le/aspera/aspera/include/init/init.h" declline="5" declcolumn="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__INIT_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__INIT_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>init_mm();</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>init_irfs();</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__INIT_H_</highlight></codeline>
+    </programlisting>
+    <location file="/home/luke/le/aspera/aspera/include/init/init.h"/>
+  </compounddef>
+</doxygen>

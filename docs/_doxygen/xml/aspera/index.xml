@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.18">
+  <compound refid="structansi__color" kind="struct"><name>ansi_color</name>
+    <member refid="structansi__color_1a6fbe942d64c001f952d0cac724c50399" kind="enum"><name>@1</name></member>
+    <member refid="structansi__color_1a6fbe942d64c001f952d0cac724c50399ae593d8359e2e7b039a6da165fd28f4c5" kind="enumvalue"><name>ANSI_BLACK</name></member>
+    <member refid="structansi__color_1a6fbe942d64c001f952d0cac724c50399a53961d25833ef0a1245ef878df173bcd" kind="enumvalue"><name>ANSI_RED</name></member>
+    <member refid="structansi__color_1a6fbe942d64c001f952d0cac724c50399abbe6a26afbccac43c526fbc7ceff17d6" kind="enumvalue"><name>ANSI_GREEN</name></member>
+    <member refid="structansi__color_1a6fbe942d64c001f952d0cac724c50399ae2cc1095be867a5a7a3e3fc955e80c64" kind="enumvalue"><name>ANSI_YELLOW</name></member>
+    <member refid="structansi__color_1a6fbe942d64c001f952d0cac724c50399ade1d4654138babd773c072379052dd9d" kind="enumvalue"><name>ANSI_BLUE</name></member>
+    <member refid="structansi__color_1a6fbe942d64c001f952d0cac724c50399a63479dcc4f9abbd2e9ba9ff7ace70992" kind="enumvalue"><name>ANSI_MAGENTA</name></member>
+    <member refid="structansi__color_1a6fbe942d64c001f952d0cac724c50399a32fbd57ffc18c468889e008bb1c9eb94" kind="enumvalue"><name>ANSI_CYAN</name></member>
+    <member refid="structansi__color_1a6fbe942d64c001f952d0cac724c50399add00b767b443cb587a4488a7bb0a5be3" kind="enumvalue"><name>ANSI_WHITE</name></member>
+    <member refid="structansi__color_1a4e2f6bae0231a3cc30f900ec2a308f2a" kind="variable"><name>color</name></member>
+    <member refid="structansi__color_1a344adcb5a905722fbfe74e24d0b97a59" kind="variable"><name>bright</name></member>
+  </compound>
+  <compound refid="structFILE" kind="struct"><name>FILE</name>
+    <member refid="structFILE_1a6170ee9ce3504a840e41be0c562f7a35" kind="variable"><name>name</name></member>
+    <member refid="structFILE_1a3e782fb1396917fc6bb541a771ef5556" kind="variable"><name>parent</name></member>
+    <member refid="structFILE_1a4fc7f0d4d74019940f7ce2547e562235" kind="variable"><name>perm</name></member>
+    <member refid="structFILE_1a4b202e34ca5d3b5403adf2a203741099" kind="variable"><name>fs</name></member>
+    <member refid="structFILE_1a1ec4a59270185089d88a922840bc169a" kind="variable"><name>cursor</name></member>
+  </compound>
+  <compound refid="structfs" kind="struct"><name>fs</name>
+    <member refid="structfs_1a1bde5e94b6c57cc497bf552368f44b16" kind="variable"><name>open</name></member>
+    <member refid="structfs_1af6ad0e24de15d2609c94e7f507925d1c" kind="variable"><name>close</name></member>
+    <member refid="structfs_1ace5c54714d6d42365dd08f15cf588e85" kind="variable"><name>write</name></member>
+    <member refid="structfs_1a4636897df6b51f401032e0698fe67d7a" kind="variable"><name>read</name></member>
+    <member refid="structfs_1acf48cffae8e3bbee09309eab8798ff08" kind="variable"><name>exec</name></member>
+  </compound>
+  <compound refid="structirfs__dirent" kind="struct"><name>irfs_dirent</name>
+    <member refid="structirfs__dirent_1a0f1ae7a552122fb77b19667378a70ce7" kind="variable"><name>namelen</name></member>
+    <member refid="structirfs__dirent_1ab72c047a498a238fb12887c5eee7b28f" kind="variable"><name>nameptr</name></member>
+    <member refid="structirfs__dirent_1af7ea13703649c306cbcf2b85171e0732" kind="variable"><name>inode</name></member>
+  </compound>
+  <compound refid="structirfs__header" kind="struct"><name>irfs_header</name>
+    <member refid="structirfs__header_1a96d41040aac982016b49e5f5eb98a724" kind="variable"><name>magic</name></member>
+    <member refid="structirfs__header_1a3dc52cd927574dbabba0083ebe381f89" kind="variable"><name>reserved</name></member>
+    <member refid="structirfs__header_1af57b7c38597575075dc8345fd2a0e463" kind="variable"><name>flags</name></member>
+    <member refid="structirfs__header_1a14bc15c7f77a466429d06edf2ca8402f" kind="variable"><name>size</name></member>
+    <member refid="structirfs__header_1acd7dfc6a707b7feefa6904bd5763a1d9" kind="variable"><name>heap_offset</name></member>
+    <member refid="structirfs__header_1a0081a52d48879911609648f9b4bad71d" kind="variable"><name>icount</name></member>
+  </compound>
+  <compound refid="structirfs__inode" kind="struct"><name>irfs_inode</name>
+    <member refid="structirfs__inode_1a1c3175612c4a9542981016ff6931a1cc" kind="variable"><name>mode</name></member>
+    <member refid="structirfs__inode_1ac27471a979bc8154b8402e7ae907ef28" kind="variable"><name>size</name></member>
+    <member refid="structirfs__inode_1a88ad28f8cd545b46ab94cd800e4adc3f" kind="variable"><name>meta_size</name></member>
+    <member refid="structirfs__inode_1ad669aecd26e20f9d11c9c927958ffabe" kind="variable"><name>offset</name></member>
+  </compound>
+  <compound refid="structirfs__mem" kind="struct"><name>irfs_mem</name>
+    <member refid="structirfs__mem_1ac7500702a991a65d6835ca0e6a0e30f6" kind="variable"><name>start</name></member>
+    <member refid="structirfs__mem_1a579e55e3c819e91c74b5407746775551" kind="variable"><name>length</name></member>
+  </compound>
+  <compound refid="structmnt" kind="struct"><name>mnt</name>
+    <member refid="structmnt_1a5e5e5b9908f43dabef980c03c812dec1" kind="variable"><name>path</name></member>
+    <member refid="structmnt_1a75f9902424db4b62ba46e076e548cdd7" kind="variable"><name>fs</name></member>
+  </compound>
+  <compound refid="structpath" kind="struct"><name>path</name>
+    <member refid="structpath_1a90b4e69e79ffcab58317188012e7da1f" kind="variable"><name>name</name></member>
+    <member refid="structpath_1afaef41c6883b6ced7684ef1723d9833d" kind="variable"><name>parent</name></member>
+  </compound>
+  <compound refid="structphys__chunk" kind="struct"><name>phys_chunk</name>
+    <member refid="structphys__chunk_1ab6fca38cd31e41be6259d977a4546ca0" kind="variable"><name>start</name></member>
+    <member refid="structphys__chunk_1ab27961f59d8768034c78ba185658d0c1" kind="variable"><name>len</name></member>
+  </compound>
+  <compound refid="structphys__chunks" kind="struct"><name>phys_chunks</name>
+    <member refid="structphys__chunks_1abe6b1ae901d3edc6cd35fea8f4b5ca96" kind="variable"><name>count</name></member>
+    <member refid="structphys__chunks_1a9040eb35b7a6efd1debd2130f24152ac" kind="variable"><name>chunks</name></member>
+  </compound>
+  <compound refid="structvga__color" kind="struct"><name>vga_color</name>
+    <member refid="structvga__color_1a170a5ffb19c67f75e1bab7a836255472" kind="enum"><name>@0</name></member>
+    <member refid="structvga__color_1a170a5ffb19c67f75e1bab7a836255472ad54e9f11bf7d3c5ec7d38e5d2c5d6f42" kind="enumvalue"><name>VGA_BLACK</name></member>
+    <member refid="structvga__color_1a170a5ffb19c67f75e1bab7a836255472a42f51d16659ca09fd51ad1b567789bb4" kind="enumvalue"><name>VGA_BLUE</name></member>
+    <member refid="structvga__color_1a170a5ffb19c67f75e1bab7a836255472a009359c46d81a5a9a2fbd7011ce78617" kind="enumvalue"><name>VGA_GREEN</name></member>
+    <member refid="structvga__color_1a170a5ffb19c67f75e1bab7a836255472a1664a80c86f55343d72dfeb644e6ef5e" kind="enumvalue"><name>VGA_CYAN</name></member>
+    <member refid="structvga__color_1a170a5ffb19c67f75e1bab7a836255472abbce404c3d2b38f803035bec63f65a2e" kind="enumvalue"><name>VGA_RED</name></member>
+    <member refid="structvga__color_1a170a5ffb19c67f75e1bab7a836255472ae4570e2b39821d2390302b5669595617" kind="enumvalue"><name>VGA_MAGENTA</name></member>
+    <member refid="structvga__color_1a170a5ffb19c67f75e1bab7a836255472a6c4822fe43f7a974c3bbe0bbdf0a12f1" kind="enumvalue"><name>VGA_YELLOW</name></member>
+    <member refid="structvga__color_1a170a5ffb19c67f75e1bab7a836255472ac7736c80fcef682cce45df254a92c8cb" kind="enumvalue"><name>VGA_WHITE</name></member>
+    <member refid="structvga__color_1a91e5cdedae3a49e4e6bbd2a0a6d00d15" kind="variable"><name>color</name></member>
+    <member refid="structvga__color_1afd9d40833de570e52dacc3c4a55adb63" kind="variable"><name>bright</name></member>
+  </compound>
+  <compound refid="check_8c" kind="file"><name>check.c</name>
+    <member refid="check_8c_1a9b4fdc94c27b276a7502f726b2eccaf2" kind="variable"><name>multiboot_info</name></member>
+    <member refid="check_8c_1a0421d1ddb41cb6968df71d9d15c7897e" kind="function"><name>boot_check</name></member>
+  </compound>
+  <compound refid="irfs__addr_8c" kind="file"><name>irfs_addr.c</name>
+    <member refid="irfs__addr_8c_1a243de17eddf6c35e08af6d22c4bdeb2b" kind="function"><name>irfs_addr</name></member>
+  </compound>
+  <compound refid="multiboot_8h" kind="file"><name>multiboot.h</name>
+    <member refid="multiboot_8h_1a9b4fdc94c27b276a7502f726b2eccaf2" kind="variable"><name>multiboot_info</name></member>
+  </compound>
+  <compound refid="phys_8c" kind="file"><name>phys.c</name>
+    <member refid="phys_8c_1a6d729a4a93b404e1e85de613485744a7" kind="function"><name>phys_map</name></member>
+  </compound>
+  <compound refid="tty_8c" kind="file"><name>tty.c</name>
+    <member refid="tty_8c_1a3eef826901e132206811b43c452c35c3" kind="variable"><name>VGA_BUFFER</name></member>
+    <member refid="tty_8c_1afd1c4e038631a0a8b4c5a3af471b7501" kind="variable"><name>terminal_x</name></member>
+    <member refid="tty_8c_1aff69791de563ee56de073310f9f59c5f" kind="variable"><name>terminal_y</name></member>
+    <member refid="tty_8c_1a0165452ad102b2a781847d6616407976" kind="variable"><name>terminal_color</name></member>
+    <member refid="tty_8c_1ad8ba3045c6d5e647c4733cc63b8679c4" kind="variable"><name>terminal_fg</name></member>
+    <member refid="tty_8c_1a651f4b022af24ef9e7205019b27e9fda" kind="variable"><name>terminal_bg</name></member>
+    <member refid="tty_8c_1aaa08c67259c373d9972169c4ffc145c0" kind="function"><name>ansi2vga</name></member>
+    <member refid="tty_8c_1a6d15eea7355dd146b1d99186ded05d15" kind="function"><name>terminal_init</name></member>
+    <member refid="tty_8c_1a2bf0ae8078fecf76f40197ece83b2d78" kind="function"><name>terminal_clear</name></member>
+    <member refid="tty_8c_1adc2794863d3e934b68a917ca92db59a3" kind="function"><name>terminal_putchar</name></member>
+    <member refid="tty_8c_1a87ddca701acbf401bb915c6219880c46" kind="function"><name>terminal_write</name></member>
+    <member refid="tty_8c_1a6f5c40c8c6594d789ddbaa8090e4eb33" kind="function"><name>terminal_puts</name></member>
+    <member refid="tty_8c_1acba38442791031347a2ebf41dbe78929" kind="function"><name>terminal_printf</name></member>
+    <member refid="tty_8c_1aebd5347a31e088192ad1d935123f3495" kind="function"><name>terminal_scroll</name></member>
+    <member refid="tty_8c_1a1207bc497c8746b29b7b268042299a0e" kind="function"><name>terminal_setcolors</name></member>
+  </compound>
+  <compound refid="vga_8h" kind="file"><name>vga.h</name>
+    <member refid="vga_8h_1a7e5abf7be634adf4e3c22e589924ea34" kind="define"><name>VGA_WIDTH</name></member>
+    <member refid="vga_8h_1a1dc3cb2af110f40260e1b2256b6fa214" kind="define"><name>VGA_HEIGHT</name></member>
+    <member refid="vga_8h_1ab04751fad2d248717c6a343a9762610c" kind="define"><name>VGA_MEM</name></member>
+    <member refid="vga_8h_1a6af02a2aa9e9037673f33967d6467aa8" kind="function"><name>vga_color_byte</name></member>
+    <member refid="vga_8h_1a7e4a2ac1d9ce5a194fcf96d0082d268f" kind="function"><name>vga_char</name></member>
+    <member refid="vga_8h_1a106a1b2f8de1658c4481530cad889895" kind="function"><name>vga_index</name></member>
+  </compound>
+  <compound refid="vfs_8c" kind="file"><name>vfs.c</name>
+    <member refid="vfs_8c_1a540c2751062f6ba071860eaea23a1430" kind="function"><name>file_req</name></member>
+    <member refid="vfs_8c_1af11b988abb83114f44fbb84dd974ae05" kind="function"><name>parse</name></member>
+  </compound>
+  <compound refid="tty_8h" kind="file"><name>tty.h</name>
+    <member refid="tty_8h_1a6d15eea7355dd146b1d99186ded05d15" kind="function"><name>terminal_init</name></member>
+    <member refid="tty_8h_1adc2794863d3e934b68a917ca92db59a3" kind="function"><name>terminal_putchar</name></member>
+    <member refid="tty_8h_1a87ddca701acbf401bb915c6219880c46" kind="function"><name>terminal_write</name></member>
+    <member refid="tty_8h_1acba38442791031347a2ebf41dbe78929" kind="function"><name>terminal_printf</name></member>
+    <member refid="tty_8h_1a6f5c40c8c6594d789ddbaa8090e4eb33" kind="function"><name>terminal_puts</name></member>
+    <member refid="tty_8h_1aebd5347a31e088192ad1d935123f3495" kind="function"><name>terminal_scroll</name></member>
+    <member refid="tty_8h_1a2bf0ae8078fecf76f40197ece83b2d78" kind="function"><name>terminal_clear</name></member>
+    <member refid="tty_8h_1a1207bc497c8746b29b7b268042299a0e" kind="function"><name>terminal_setcolors</name></member>
+  </compound>
+  <compound refid="vfs_8h" kind="file"><name>vfs.h</name>
+    <member refid="vfs_8h_1a17cf47cf19fcb9c0c94ec3743efb3972" kind="typedef"><name>FILE</name></member>
+    <member refid="vfs_8h_1a5a9a7058a9a51db691a0fd5bb6f032d7" kind="variable"><name>fperm</name></member>
+    <member refid="vfs_8h_1acab531abaa74a7e664e3986f2522b33a" kind="variable"><name>r</name></member>
+    <member refid="vfs_8h_1aac374e320caaadeca4874add33b62af2" kind="variable"><name>w</name></member>
+    <member refid="vfs_8h_1a6150e0515f7202e2fb518f7206ed97dc" kind="variable"><name>x</name></member>
+    <member refid="vfs_8h_1a540c2751062f6ba071860eaea23a1430" kind="function"><name>file_req</name></member>
+    <member refid="vfs_8h_1ae9f9f85dcc6b3c02fbc9e951b9a7481c" kind="function"><name>file_open_req</name></member>
+    <member refid="vfs_8h_1a8f057e751af81240c95bbcf3bf539ab5" kind="function"><name>file_open_reqs</name></member>
+    <member refid="vfs_8h_1a67dd2b97cdacbe277ca5914201c41a2e" kind="function"><name>file_close</name></member>
+    <member refid="vfs_8h_1ac82afc11693e7546a7f0d84947a4fa55" kind="function"><name>fs_reg</name></member>
+  </compound>
+  <compound refid="init_8h" kind="file"><name>init.h</name>
+    <member refid="init_8h_1a875bf389ea94f2bb5eb6cf5bc028c82b" kind="function"><name>init_mm</name></member>
+    <member refid="init_8h_1a6dd87095a3c164dbf14053ad4bd697c0" kind="function"><name>init_irfs</name></member>
+  </compound>
+  <compound refid="irfs_8h" kind="file"><name>irfs.h</name>
+    <member refid="irfs_8h_1aedd4a3b7cfcd5fc69b493dd08d93dbf3" kind="define"><name>IRFS_MIN_VERSION</name></member>
+    <member refid="irfs_8h_1a3ad56f127d87e93bcadef7563fd77007" kind="define"><name>IRFS_HEADER_SIZE</name></member>
+    <member refid="irfs_8h_1a243de17eddf6c35e08af6d22c4bdeb2b" kind="function"><name>irfs_addr</name></member>
+    <member refid="irfs_8h_1acd45a1ea8a78bef662af5165387851f9" kind="function"><name>irfs_check_magic</name></member>
+    <member refid="irfs_8h_1a6c7193788c96a1a71d216866b6d64517" kind="function"><name>irfs_parse_header</name></member>
+  </compound>
+  <compound refid="phys_8h" kind="file"><name>phys.h</name>
+    <member refid="phys_8h_1a6d729a4a93b404e1e85de613485744a7" kind="function"><name>phys_map</name></member>
+  </compound>
+  <compound refid="entry_8c" kind="file"><name>entry.c</name>
+    <member refid="entry_8c_1ab8b2bcb241587fba4f4c463be74dae57" kind="function"><name>kernel_entry</name></member>
+  </compound>
+  <compound refid="header_8c" kind="file"><name>header.c</name>
+    <member refid="header_8c_1acd45a1ea8a78bef662af5165387851f9" kind="function"><name>irfs_check_magic</name></member>
+    <member refid="header_8c_1a6c7193788c96a1a71d216866b6d64517" kind="function"><name>irfs_parse_header</name></member>
+  </compound>
+  <compound refid="init_8c" kind="file"><name>init.c</name>
+    <member refid="init_8c_1a6dd87095a3c164dbf14053ad4bd697c0" kind="function"><name>init_irfs</name></member>
+  </compound>
+  <compound refid="table_8c" kind="file"><name>table.c</name>
+  </compound>
+  <compound refid="dir_75ab4c7fd203ad1f7634571c208ba881" kind="dir"><name>/home/luke/le/aspera/aspera/arch</name>
+  </compound>
+  <compound refid="dir_56c91d0a3aef65621556352d9245f9ea" kind="dir"><name>/home/luke/le/aspera/aspera</name>
+  </compound>
+  <compound refid="dir_c0655a3e2987547608675e09c639a275" kind="dir"><name>/home/luke/le/aspera/aspera/include/aspera</name>
+  </compound>
+  <compound refid="dir_b761f2699491559bde4aff2ca9cbc985" kind="dir"><name>/home/luke/le/aspera/aspera/arch/i386/boot</name>
+  </compound>
+  <compound refid="dir_f57cac16f255601edb963b156384f20d" kind="dir"><name>/home/luke/le/aspera/aspera/include/fs</name>
+  </compound>
+  <compound refid="dir_7714a6106d3dbe9e2482a8d3c3e01978" kind="dir"><name>/home/luke/le/aspera/aspera/fs</name>
+  </compound>
+  <compound refid="dir_609b18d6c1f94293350767e2e535ed7d" kind="dir"><name>/home/luke/le/aspera/aspera/arch/i386</name>
+  </compound>
+  <compound refid="dir_96531b204d286c2b6601905b69363744" kind="dir"><name>/home/luke/le/aspera/aspera/include</name>
+  </compound>
+  <compound refid="dir_031a7221f34207dc4c2a572b041c995f" kind="dir"><name>/home/luke/le/aspera/aspera/init</name>
+  </compound>
+  <compound refid="dir_dacbfbc7fa691c1b79db6c9d7ed5483d" kind="dir"><name>/home/luke/le/aspera/aspera/include/init</name>
+  </compound>
+  <compound refid="dir_ddd2cc06d19629e909ac43038168b9c2" kind="dir"><name>/home/luke/le/aspera/aspera/init/irfs</name>
+  </compound>
+  <compound refid="dir_aef60c5e52723a0cb457b87fbf826e5b" kind="dir"><name>/home/luke/le/aspera/aspera/include/mm</name>
+  </compound>
+  <compound refid="dir_c2ecfccc1c131e2972193d1ed5522210" kind="dir"><name>/home/luke/le/aspera/aspera/arch/i386/boot/multiboot</name>
+  </compound>
+</doxygenindex>

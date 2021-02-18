@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="init_8c" kind="file" language="C++">
+    <compoundname>init.c</compoundname>
+    <includes refid="init_8h" local="no">init/init.h</includes>
+    <includes refid="irfs_8h" local="no">init/irfs.h</includes>
+    <includes refid="tty_8h" local="no">aspera/tty.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>init/irfs.h</label>
+        <link refid="irfs_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+      <node id="6">
+        <label>stddef.h</label>
+      </node>
+      <node id="2">
+        <label>init/init.h</label>
+        <link refid="init_8h_source"/>
+      </node>
+      <node id="5">
+        <label>aspera/tty.h</label>
+        <link refid="tty_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/luke/le/aspera/aspera/init/irfs/init.c</label>
+        <link refid="init_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="init_8c_1a6dd87095a3c164dbf14053ad4bd697c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int init_irfs</definition>
+        <argsstring>()</argsstring>
+        <name>init_irfs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/init/irfs/init.c" line="5" column="5" bodyfile="/home/luke/le/aspera/aspera/init/irfs/init.c" bodystart="5" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;init/init.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;init/irfs.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;aspera/tty.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>init_irfs()</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>terminal_printf(</highlight><highlight class="stringliteral">&quot;INITRAMFS\n=========\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structirfs__mem" kindref="compound">irfs_mem</ref><sp/>mem<sp/>=<sp/>irfs_addr();</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>terminal_printf(</highlight><highlight class="stringliteral">&quot;irfs<sp/>at<sp/>%X\nstring:<sp/>%s\nlength:<sp/>%X\n&quot;</highlight><highlight class="normal">,<sp/>mem.<ref refid="structirfs__mem_1ac7500702a991a65d6835ca0e6a0e30f6" kindref="member">start</ref>,<sp/>mem.<ref refid="structirfs__mem_1ac7500702a991a65d6835ca0e6a0e30f6" kindref="member">start</ref>,<sp/>mem.<ref refid="structirfs__mem_1a579e55e3c819e91c74b5407746775551" kindref="member">length</ref>);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structirfs__header" kindref="compound">irfs_header</ref><sp/>header<sp/>=<sp/>irfs_parse_header(mem);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>terminal_printf(</highlight><highlight class="stringliteral">&quot;res:<sp/>%X\flags:<sp/>%X\nsize:<sp/>%X\nheap_offset:<sp/>%X\nicount:<sp/>%X\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>header.<ref refid="structirfs__header_1a3dc52cd927574dbabba0083ebe381f89" kindref="member">reserved</ref>,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>header.<ref refid="structirfs__header_1af57b7c38597575075dc8345fd2a0e463" kindref="member">flags</ref>,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>header.<ref refid="structirfs__header_1a14bc15c7f77a466429d06edf2ca8402f" kindref="member">size</ref>,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>header.<ref refid="structirfs__header_1acd7dfc6a707b7feefa6904bd5763a1d9" kindref="member">heap_offset</ref>,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>header.<ref refid="structirfs__header_1a0081a52d48879911609648f9b4bad71d" kindref="member">icount</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/luke/le/aspera/aspera/init/irfs/init.c"/>
+  </compounddef>
+</doxygen>

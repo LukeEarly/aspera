@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structirfs__mem" kind="struct" language="C++" prot="public">
+    <compoundname>irfs_mem</compoundname>
+    <includes refid="irfs_8h" local="no">irfs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structirfs__mem_1ac7500702a991a65d6835ca0e6a0e30f6" prot="public" static="no" mutable="no">
+        <type>uint32_t *</type>
+        <definition>uint32_t* irfs_mem::start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <briefdescription>
+<para>pointer to the start of the image </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/init/irfs.h" line="19" column="10" bodyfile="/home/luke/le/aspera/aspera/include/init/irfs.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structirfs__mem_1a579e55e3c819e91c74b5407746775551" prot="public" static="no" mutable="no">
+        <type>uintptr_t</type>
+        <definition>uintptr_t irfs_mem::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+<para>length in bytes </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/init/irfs.h" line="20" column="11" bodyfile="/home/luke/le/aspera/aspera/include/init/irfs.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A chunk of memory that stores the IRFS. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/luke/le/aspera/aspera/include/init/irfs.h" line="18" column="1" bodyfile="/home/luke/le/aspera/aspera/include/init/irfs.h" bodystart="18" bodyend="21"/>
+    <listofallmembers>
+      <member refid="structirfs__mem_1a579e55e3c819e91c74b5407746775551" prot="public" virt="non-virtual"><scope>irfs_mem</scope><name>length</name></member>
+      <member refid="structirfs__mem_1ac7500702a991a65d6835ca0e6a0e30f6" prot="public" virt="non-virtual"><scope>irfs_mem</scope><name>start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

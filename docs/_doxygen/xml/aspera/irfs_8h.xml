@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="irfs_8h" kind="file" language="C++">
+    <compoundname>irfs.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includedby refid="irfs__addr_8c" local="no">/home/luke/le/aspera/aspera/arch/i386/boot/multiboot/irfs_addr.c</includedby>
+    <includedby refid="header_8c" local="no">/home/luke/le/aspera/aspera/init/irfs/header.c</includedby>
+    <includedby refid="init_8c" local="no">/home/luke/le/aspera/aspera/init/irfs/init.c</includedby>
+    <includedby refid="table_8c" local="no">/home/luke/le/aspera/aspera/init/irfs/table.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/luke/le/aspera/aspera/include/init/irfs.h</label>
+        <link refid="irfs_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structirfs__mem" prot="public">irfs_mem</innerclass>
+    <innerclass refid="structirfs__header" prot="public">irfs_header</innerclass>
+    <innerclass refid="structirfs__inode" prot="public">irfs_inode</innerclass>
+    <innerclass refid="structirfs__dirent" prot="public">irfs_dirent</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="irfs_8h_1aedd4a3b7cfcd5fc69b493dd08d93dbf3" prot="public" static="no">
+        <name>IRFS_MIN_VERSION</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>Minimum version of IRFS required. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/init/irfs.h" line="9" column="9" bodyfile="/home/luke/le/aspera/aspera/include/init/irfs.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="irfs_8h_1a3ad56f127d87e93bcadef7563fd77007" prot="public" static="no">
+        <name>IRFS_HEADER_SIZE</name>
+        <initializer>24</initializer>
+        <briefdescription>
+<para>Size of header. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/init/irfs.h" line="13" column="9" bodyfile="/home/luke/le/aspera/aspera/include/init/irfs.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="irfs_8h_1a243de17eddf6c35e08af6d22c4bdeb2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structirfs__mem" kindref="compound">irfs_mem</ref></type>
+        <definition>struct irfs_mem irfs_addr</definition>
+        <argsstring>()</argsstring>
+        <name>irfs_addr</name>
+        <briefdescription>
+<para>Loads and gets address of irfs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>memory chunk. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/init/irfs.h" line="1" column="0" bodyfile="/home/luke/le/aspera/aspera/arch/i386/boot/multiboot/irfs_addr.c" bodystart="7" bodyend="25" declfile="/home/luke/le/aspera/aspera/include/init/irfs.h" declline="1" declcolumn="0"/>
+      </memberdef>
+      <memberdef kind="function" id="irfs_8h_1acd45a1ea8a78bef662af5165387851f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int irfs_check_magic</definition>
+        <argsstring>(struct irfs_mem mem)</argsstring>
+        <name>irfs_check_magic</name>
+        <param>
+          <type>struct <ref refid="structirfs__mem" kindref="compound">irfs_mem</ref></type>
+          <declname>mem</declname>
+        </param>
+        <briefdescription>
+<para>Checks the magic string &quot;IRFS&quot; (no null byte). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>memory location and size of image. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 if matches, 0 if not </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/init/irfs.h" line="64" column="5" bodyfile="/home/luke/le/aspera/aspera/init/irfs/header.c" bodystart="3" bodyend="11" declfile="/home/luke/le/aspera/aspera/include/init/irfs.h" declline="64" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="irfs_8h_1a6c7193788c96a1a71d216866b6d64517" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structirfs__header" kindref="compound">irfs_header</ref></type>
+        <definition>struct irfs_header irfs_parse_header</definition>
+        <argsstring>(struct irfs_mem mem)</argsstring>
+        <name>irfs_parse_header</name>
+        <param>
+          <type>struct <ref refid="structirfs__mem" kindref="compound">irfs_mem</ref></type>
+          <declname>mem</declname>
+        </param>
+        <briefdescription>
+<para>Populates the struct with the values of the header. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mem</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>memory location and size of image. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a struct of the header values </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/init/irfs.h" line="64" column="5" bodyfile="/home/luke/le/aspera/aspera/init/irfs/header.c" bodystart="13" bodyend="23" declfile="/home/luke/le/aspera/aspera/include/init/irfs.h" declline="64" declcolumn="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__IRFS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__IRFS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor">#define<sp/>IRFS_MIN_VERSION<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor">#define<sp/>IRFS_HEADER_SIZE<sp/>24</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="structirfs__mem" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structirfs__mem" kindref="compound">irfs_mem</ref><sp/>{</highlight></codeline>
+<codeline lineno="19" refid="structirfs__mem_1ac7500702a991a65d6835ca0e6a0e30f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>*<ref refid="structirfs__mem_1ac7500702a991a65d6835ca0e6a0e30f6" kindref="member">start</ref>;<sp/></highlight></codeline>
+<codeline lineno="20" refid="structirfs__mem_1a579e55e3c819e91c74b5407746775551" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uintptr_t<sp/><ref refid="structirfs__mem_1a579e55e3c819e91c74b5407746775551" kindref="member">length</ref>;<sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="structirfs__header" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structirfs__header" kindref="compound">irfs_header</ref><sp/>{</highlight></codeline>
+<codeline lineno="27" refid="structirfs__header_1a96d41040aac982016b49e5f5eb98a724" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structirfs__header_1a96d41040aac982016b49e5f5eb98a724" kindref="member">magic</ref>;<sp/></highlight></codeline>
+<codeline lineno="28" refid="structirfs__header_1a3dc52cd927574dbabba0083ebe381f89" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structirfs__header_1a3dc52cd927574dbabba0083ebe381f89" kindref="member">reserved</ref>;<sp/></highlight></codeline>
+<codeline lineno="29" refid="structirfs__header_1af57b7c38597575075dc8345fd2a0e463" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structirfs__header_1af57b7c38597575075dc8345fd2a0e463" kindref="member">flags</ref>;<sp/></highlight></codeline>
+<codeline lineno="30" refid="structirfs__header_1a14bc15c7f77a466429d06edf2ca8402f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structirfs__header_1a14bc15c7f77a466429d06edf2ca8402f" kindref="member">size</ref>;<sp/></highlight></codeline>
+<codeline lineno="31" refid="structirfs__header_1acd7dfc6a707b7feefa6904bd5763a1d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structirfs__header_1acd7dfc6a707b7feefa6904bd5763a1d9" kindref="member">heap_offset</ref>;<sp/></highlight></codeline>
+<codeline lineno="32" refid="structirfs__header_1a0081a52d48879911609648f9b4bad71d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structirfs__header_1a0081a52d48879911609648f9b4bad71d" kindref="member">icount</ref>;<sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="structirfs__inode" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structirfs__inode" kindref="compound">irfs_inode</ref><sp/>{</highlight></codeline>
+<codeline lineno="39" refid="structirfs__inode_1a1c3175612c4a9542981016ff6931a1cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structirfs__inode_1a1c3175612c4a9542981016ff6931a1cc" kindref="member">mode</ref>;<sp/></highlight></codeline>
+<codeline lineno="40" refid="structirfs__inode_1ac27471a979bc8154b8402e7ae907ef28" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structirfs__inode_1ac27471a979bc8154b8402e7ae907ef28" kindref="member">size</ref>;<sp/></highlight></codeline>
+<codeline lineno="41" refid="structirfs__inode_1a88ad28f8cd545b46ab94cd800e4adc3f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structirfs__inode_1a88ad28f8cd545b46ab94cd800e4adc3f" kindref="member">meta_size</ref>;<sp/></highlight></codeline>
+<codeline lineno="42" refid="structirfs__inode_1ad669aecd26e20f9d11c9c927958ffabe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structirfs__inode_1ad669aecd26e20f9d11c9c927958ffabe" kindref="member">offset</ref>;<sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="structirfs__dirent" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structirfs__dirent" kindref="compound">irfs_dirent</ref><sp/>{</highlight></codeline>
+<codeline lineno="49" refid="structirfs__dirent_1a0f1ae7a552122fb77b19667378a70ce7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structirfs__dirent_1a0f1ae7a552122fb77b19667378a70ce7" kindref="member">namelen</ref>;<sp/></highlight></codeline>
+<codeline lineno="50" refid="structirfs__dirent_1ab72c047a498a238fb12887c5eee7b28f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structirfs__dirent_1ab72c047a498a238fb12887c5eee7b28f" kindref="member">nameptr</ref>;<sp/></highlight></codeline>
+<codeline lineno="51" refid="structirfs__dirent_1af7ea13703649c306cbcf2b85171e0732" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structirfs__dirent_1af7ea13703649c306cbcf2b85171e0732" kindref="member">inode</ref>;<sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structirfs__mem" kindref="compound">irfs_mem</ref><sp/>irfs_addr();</highlight></codeline>
+<codeline lineno="64"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>irfs_check_magic(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structirfs__mem" kindref="compound">irfs_mem</ref><sp/>mem);</highlight></codeline>
+<codeline lineno="70"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structirfs__header" kindref="compound">irfs_header</ref><sp/>irfs_parse_header(struct<sp/><ref refid="structirfs__mem" kindref="compound">irfs_mem</ref><sp/>mem);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__IRFS_H_</highlight></codeline>
+    </programlisting>
+    <location file="/home/luke/le/aspera/aspera/include/init/irfs.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="phys_8h" kind="file" language="C++">
+    <compoundname>phys.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includedby refid="phys_8c" local="no">/home/luke/le/aspera/aspera/arch/i386/boot/multiboot/phys.c</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+      <node id="1">
+        <label>/home/luke/le/aspera/aspera/include/mm/phys.h</label>
+        <link refid="phys_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structphys__chunk" prot="public">phys_chunk</innerclass>
+    <innerclass refid="structphys__chunks" prot="public">phys_chunks</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="phys_8h_1a6d729a4a93b404e1e85de613485744a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="structphys__chunks" kindref="compound">phys_chunks</ref></type>
+        <definition>struct phys_chunks phys_map</definition>
+        <argsstring>()</argsstring>
+        <name>phys_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/mm/phys.h" line="1" column="0" bodyfile="/home/luke/le/aspera/aspera/arch/i386/boot/multiboot/phys.c" bodystart="4" bodyend="19" declfile="/home/luke/le/aspera/aspera/include/mm/phys.h" declline="1" declcolumn="0"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__PHYS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__PHYS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="structphys__chunk" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structphys__chunk" kindref="compound">phys_chunk</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>uintptr_t<sp/>start;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>uintptr_t<sp/>len;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="structphys__chunks" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structphys__chunks" kindref="compound">phys_chunks</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>count;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structphys__chunk" kindref="compound">phys_chunk</ref><sp/>chunks[];</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structphys__chunks" kindref="compound">phys_chunks</ref><sp/>phys_map();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__PHYS_H_</highlight></codeline>
+    </programlisting>
+    <location file="/home/luke/le/aspera/aspera/include/mm/phys.h"/>
+  </compounddef>
+</doxygen>

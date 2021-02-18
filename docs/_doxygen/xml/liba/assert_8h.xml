@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="assert_8h" kind="file" language="C++">
+    <compoundname>assert.h</compoundname>
+    <includes local="no">aspera/tty.h</includes>
+    <includes refid="stdlib_8h" local="no">stdlib.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/luke/le/aspera/lib/a/include/assert.h</label>
+        <link refid="assert_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>aspera/tty.h</label>
+      </node>
+      <node id="3">
+        <label>stdlib.h</label>
+        <link refid="stdlib_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>sys/cdefs.h</label>
+        <link refid="cdefs_8h_source"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="assert_8h_1acdcc5aaebf3f273c1762f24a6ece2e5e" prot="public" static="no">
+        <name>assert</name>
+        <param><defname>condition</defname></param>
+        <initializer>	if (!(condition)) {\
+		terminal_setcolors(\
+			(struct ansi_color){.color=ANSI_RED, .bright=1},\
+			(struct ansi_color){.color=ANSI_BLACK, .bright=0});\
+		terminal_puts(&quot;assertion failed: &quot; #condition &quot;\n&quot;);\
+		abort();\
+	}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/lib/a/include/assert.h" line="8" column="9" bodyfile="/home/luke/le/aspera/lib/a/include/assert.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__ASSERT_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__ASSERT_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//#ifdef<sp/>__is_libk</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;aspera/tty.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>assert(condition)\</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>if<sp/>(!(condition))<sp/>{\</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>terminal_setcolors(\</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(struct<sp/>ansi_color){.color=ANSI_RED,<sp/>.bright=1},\</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(struct<sp/>ansi_color){.color=ANSI_BLACK,<sp/>.bright=0});\</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>terminal_puts(&quot;assertion<sp/>failed:<sp/>&quot;<sp/>#condition<sp/>&quot;\n&quot;);\</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>abort();\</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO<sp/>liba<sp/>assert</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//#endif<sp/>//<sp/>__is_libk</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__ASSERT_H_</highlight></codeline>
+    </programlisting>
+    <location file="/home/luke/le/aspera/lib/a/include/assert.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.18">
+  <compound refid="assert_8h" kind="file"><name>assert.h</name>
+    <member refid="assert_8h_1acdcc5aaebf3f273c1762f24a6ece2e5e" kind="define"><name>assert</name></member>
+  </compound>
+  <compound refid="stdlib_8h" kind="file"><name>stdlib.h</name>
+    <member refid="stdlib_8h_1a342b9cd31607a848b169a5dcca6cc149" kind="function"><name>__attribute__</name></member>
+  </compound>
+  <compound refid="string_8h" kind="file"><name>string.h</name>
+    <member refid="string_8h_1a9040752ef8374fae46878f04371fef89" kind="function"><name>memchr</name></member>
+    <member refid="string_8h_1a9544ce2951e51010fc66214106c0f849" kind="function"><name>memcmp</name></member>
+    <member refid="string_8h_1ad1b7311b48288a0d08172f26ff64dd67" kind="function"><name>memcpy</name></member>
+    <member refid="string_8h_1ac29ceae3058f36046c72528e6cdb18b3" kind="function"><name>memmove</name></member>
+    <member refid="string_8h_1ab8dce9c192324f0fd191fd5b85c7bb60" kind="function"><name>memset</name></member>
+    <member refid="string_8h_1adb8723e585ed29f2370cddf90f6891bc" kind="function"><name>strcat</name></member>
+    <member refid="string_8h_1a1164ddc8adfd688e3d71bc3aa43e2b97" kind="function"><name>strncat</name></member>
+    <member refid="string_8h_1afcd97f487174f9092b0f23c7ac78a55a" kind="function"><name>strchr</name></member>
+    <member refid="string_8h_1a6f3dcb20ff11ff9db5904c3cfb61a38c" kind="function"><name>strcmp</name></member>
+    <member refid="string_8h_1a2625ebeb5356559d235ca1ee5b15b679" kind="function"><name>strncmp</name></member>
+    <member refid="string_8h_1a8337946aca09168b923ccc2389bf3d28" kind="function"><name>strcoll</name></member>
+    <member refid="string_8h_1a7a82515b5d377be04817715c5465b647" kind="function"><name>strcpy</name></member>
+    <member refid="string_8h_1a09e6aca9ef54246c2d1c567465011b8e" kind="function"><name>strncpy</name></member>
+    <member refid="string_8h_1a27fea0fac317f96759f9776e35ad58aa" kind="function"><name>strcspn</name></member>
+    <member refid="string_8h_1add46ab98f32b76457852dbb872842bf2" kind="function"><name>strerror</name></member>
+    <member refid="string_8h_1a008e171a518fe0e0352f31b245e03875" kind="function"><name>strlen</name></member>
+    <member refid="string_8h_1a577b071bee67af4464665a1dc4f024e2" kind="function"><name>strpbrk</name></member>
+    <member refid="string_8h_1a9b5ffb90d9a30625617401e6a5999e85" kind="function"><name>strrchr</name></member>
+    <member refid="string_8h_1a0b2bb47ec875bcd61791b1b000b0fa64" kind="function"><name>strspn</name></member>
+    <member refid="string_8h_1a4a710d86541afc6b7dafddcdb4b1c94f" kind="function"><name>strstr</name></member>
+    <member refid="string_8h_1a8cb460f64c449f2a9b9b7a40569ce0fe" kind="function"><name>strtok</name></member>
+    <member refid="string_8h_1add1f1078b3303920c19fd68fcba3f908" kind="function"><name>strxfrm</name></member>
+  </compound>
+  <compound refid="cdefs_8h" kind="file"><name>cdefs.h</name>
+    <member refid="cdefs_8h_1ad1989059747de14254259d2a202571f2" kind="define"><name>__aspera_liba</name></member>
+  </compound>
+  <compound refid="abort_8c" kind="file"><name>abort.c</name>
+    <member refid="abort_8c_1a65227f658bff0c004229152a4d9d4bd0" kind="function"><name>__attribute__</name></member>
+  </compound>
+  <compound refid="memcmp_8c" kind="file"><name>memcmp.c</name>
+    <member refid="memcmp_8c_1a9544ce2951e51010fc66214106c0f849" kind="function"><name>memcmp</name></member>
+  </compound>
+  <compound refid="memcpy_8c" kind="file"><name>memcpy.c</name>
+    <member refid="memcpy_8c_1ad1b7311b48288a0d08172f26ff64dd67" kind="function"><name>memcpy</name></member>
+  </compound>
+  <compound refid="memmove_8c" kind="file"><name>memmove.c</name>
+    <member refid="memmove_8c_1ac29ceae3058f36046c72528e6cdb18b3" kind="function"><name>memmove</name></member>
+  </compound>
+  <compound refid="memset_8c" kind="file"><name>memset.c</name>
+    <member refid="memset_8c_1ab8dce9c192324f0fd191fd5b85c7bb60" kind="function"><name>memset</name></member>
+  </compound>
+  <compound refid="strcmp_8c" kind="file"><name>strcmp.c</name>
+    <member refid="strcmp_8c_1a6f3dcb20ff11ff9db5904c3cfb61a38c" kind="function"><name>strcmp</name></member>
+  </compound>
+  <compound refid="strlen_8c" kind="file"><name>strlen.c</name>
+    <member refid="strlen_8c_1a008e171a518fe0e0352f31b245e03875" kind="function"><name>strlen</name></member>
+  </compound>
+  <compound refid="dir_e8ce1cb5a1fb8b3f999347465a969449" kind="dir"><name>/home/luke/le/aspera/lib/a</name>
+  </compound>
+  <compound refid="dir_d6af36edbcd4a9c4999687083f6b57ba" kind="dir"><name>/home/luke/le/aspera/lib/a/include</name>
+  </compound>
+  <compound refid="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir"><name>/home/luke/le/aspera/lib</name>
+  </compound>
+  <compound refid="dir_3e7bec0d1feff8d987a1b6af117a9e3c" kind="dir"><name>/home/luke/le/aspera/lib/a/stdlib</name>
+  </compound>
+  <compound refid="dir_6df1960baf5ad75bf5cc4e7c8725bcbf" kind="dir"><name>/home/luke/le/aspera/lib/a/string</name>
+  </compound>
+  <compound refid="dir_b4a2cd7842f155e4c9281d9a4fc2fa28" kind="dir"><name>/home/luke/le/aspera/lib/a/include/sys</name>
+  </compound>
+</doxygenindex>

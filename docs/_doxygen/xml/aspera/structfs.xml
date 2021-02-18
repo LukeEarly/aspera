@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structfs" kind="struct" language="C++" prot="public">
+    <compoundname>fs</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structfs_1a1bde5e94b6c57cc497bf552368f44b16" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* fs::open) (FILE *stream)</definition>
+        <argsstring>)(FILE *stream)</argsstring>
+        <name>open</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/fs/vfs.h" line="9" column="1" bodyfile="/home/luke/le/aspera/aspera/include/fs/vfs.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfs_1af6ad0e24de15d2609c94e7f507925d1c" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* fs::close) (FILE *stream)</definition>
+        <argsstring>)(FILE *stream)</argsstring>
+        <name>close</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/fs/vfs.h" line="10" column="1" bodyfile="/home/luke/le/aspera/aspera/include/fs/vfs.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfs_1ace5c54714d6d42365dd08f15cf588e85" prot="public" static="no" mutable="no">
+        <type>size_t(*</type>
+        <definition>size_t(* fs::write) (void *buf, size_t size, size_t count, FILE *stream)</definition>
+        <argsstring>)(void *buf, size_t size, size_t count, FILE *stream)</argsstring>
+        <name>write</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/fs/vfs.h" line="11" column="1" bodyfile="/home/luke/le/aspera/aspera/include/fs/vfs.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfs_1a4636897df6b51f401032e0698fe67d7a" prot="public" static="no" mutable="no">
+        <type>size_t(*</type>
+        <definition>size_t(* fs::read) (void *buf, size_t size, size_t count, FILE *stream)</definition>
+        <argsstring>)(void *buf, size_t size, size_t count, FILE *stream)</argsstring>
+        <name>read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/fs/vfs.h" line="12" column="1" bodyfile="/home/luke/le/aspera/aspera/include/fs/vfs.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfs_1acf48cffae8e3bbee09309eab8798ff08" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* fs::exec) (int argc, void **argv, FILE *file)</definition>
+        <argsstring>)(int argc, void **argv, FILE *file)</argsstring>
+        <name>exec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/fs/vfs.h" line="13" column="1" bodyfile="/home/luke/le/aspera/aspera/include/fs/vfs.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/luke/le/aspera/aspera/include/fs/vfs.h" line="8" column="1" bodyfile="/home/luke/le/aspera/aspera/include/fs/vfs.h" bodystart="8" bodyend="14"/>
+    <listofallmembers>
+      <member refid="structfs_1af6ad0e24de15d2609c94e7f507925d1c" prot="public" virt="non-virtual"><scope>fs</scope><name>close</name></member>
+      <member refid="structfs_1acf48cffae8e3bbee09309eab8798ff08" prot="public" virt="non-virtual"><scope>fs</scope><name>exec</name></member>
+      <member refid="structfs_1a1bde5e94b6c57cc497bf552368f44b16" prot="public" virt="non-virtual"><scope>fs</scope><name>open</name></member>
+      <member refid="structfs_1a4636897df6b51f401032e0698fe67d7a" prot="public" virt="non-virtual"><scope>fs</scope><name>read</name></member>
+      <member refid="structfs_1ace5c54714d6d42365dd08f15cf588e85" prot="public" virt="non-virtual"><scope>fs</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

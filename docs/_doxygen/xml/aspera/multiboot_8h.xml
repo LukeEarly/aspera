@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="multiboot_8h" kind="file" language="C++">
+    <compoundname>multiboot.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includedby refid="check_8c" local="yes">/home/luke/le/aspera/aspera/arch/i386/boot/multiboot/check.c</includedby>
+    <includedby refid="irfs__addr_8c" local="yes">/home/luke/le/aspera/aspera/arch/i386/boot/multiboot/irfs_addr.c</includedby>
+    <includedby refid="phys_8c" local="yes">/home/luke/le/aspera/aspera/arch/i386/boot/multiboot/phys.c</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+      <node id="1">
+        <label>/home/luke/le/aspera/aspera/arch/i386/boot/multiboot/multiboot.h</label>
+        <link refid="multiboot_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="multiboot_8h_1a9b4fdc94c27b276a7502f726b2eccaf2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t multiboot_info[116]</definition>
+        <argsstring>[116]</argsstring>
+        <name>multiboot_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/arch/i386/boot/multiboot/multiboot.h" line="6" column="16" bodyfile="/home/luke/le/aspera/aspera/arch/i386/boot/multiboot/check.c" bodystart="6" bodyend="-1" declfile="/home/luke/le/aspera/aspera/arch/i386/boot/multiboot/multiboot.h" declline="6" declcolumn="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__MULTIBOOT_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__MULTIBOOT_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/>multiboot_info[116];</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__MULTIBOOT_H_</highlight></codeline>
+    </programlisting>
+    <location file="/home/luke/le/aspera/aspera/arch/i386/boot/multiboot/multiboot.h"/>
+  </compounddef>
+</doxygen>

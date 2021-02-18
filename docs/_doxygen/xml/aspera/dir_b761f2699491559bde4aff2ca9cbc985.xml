@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="dir_b761f2699491559bde4aff2ca9cbc985" kind="dir">
+    <compoundname>/home/luke/le/aspera/aspera/arch/i386/boot</compoundname>
+    <innerdir refid="dir_c2ecfccc1c131e2972193d1ed5522210">/home/luke/le/aspera/aspera/arch/i386/boot/multiboot</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/luke/le/aspera/aspera/arch/i386/boot/"/>
+  </compounddef>
+</doxygen>

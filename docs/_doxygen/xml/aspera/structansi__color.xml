@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structansi__color" kind="struct" language="C++" prot="public">
+    <compoundname>ansi_color</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structansi__color_1a6fbe942d64c001f952d0cac724c50399" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@1</name>
+        <enumvalue id="structansi__color_1a6fbe942d64c001f952d0cac724c50399ae593d8359e2e7b039a6da165fd28f4c5" prot="public">
+          <name>ANSI_BLACK</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structansi__color_1a6fbe942d64c001f952d0cac724c50399a53961d25833ef0a1245ef878df173bcd" prot="public">
+          <name>ANSI_RED</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structansi__color_1a6fbe942d64c001f952d0cac724c50399abbe6a26afbccac43c526fbc7ceff17d6" prot="public">
+          <name>ANSI_GREEN</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structansi__color_1a6fbe942d64c001f952d0cac724c50399ae2cc1095be867a5a7a3e3fc955e80c64" prot="public">
+          <name>ANSI_YELLOW</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structansi__color_1a6fbe942d64c001f952d0cac724c50399ade1d4654138babd773c072379052dd9d" prot="public">
+          <name>ANSI_BLUE</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structansi__color_1a6fbe942d64c001f952d0cac724c50399a63479dcc4f9abbd2e9ba9ff7ace70992" prot="public">
+          <name>ANSI_MAGENTA</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structansi__color_1a6fbe942d64c001f952d0cac724c50399a32fbd57ffc18c468889e008bb1c9eb94" prot="public">
+          <name>ANSI_CYAN</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structansi__color_1a6fbe942d64c001f952d0cac724c50399add00b767b443cb587a4488a7bb0a5be3" prot="public">
+          <name>ANSI_WHITE</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/aspera/tty.h" line="6" column="1" bodyfile="/home/luke/le/aspera/aspera/include/aspera/tty.h" bodystart="6" bodyend="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structansi__color_1a4e2f6bae0231a3cc30f900ec2a308f2a" prot="public" static="no" mutable="no">
+        <type>enum ansi_color::@1</type>
+        <definition>enum ansi_color::@1 ansi_color::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/aspera/tty.h" line="15" column="7"/>
+      </memberdef>
+      <memberdef kind="variable" id="structansi__color_1a344adcb5a905722fbfe74e24d0b97a59" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int ansi_color::bright</definition>
+        <argsstring></argsstring>
+        <name>bright</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/aspera/tty.h" line="16" column="14" bodyfile="/home/luke/le/aspera/aspera/include/aspera/tty.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/luke/le/aspera/aspera/include/aspera/tty.h" line="5" column="1" bodyfile="/home/luke/le/aspera/aspera/include/aspera/tty.h" bodystart="5" bodyend="17"/>
+    <listofallmembers>
+      <member refid="structansi__color_1a6fbe942d64c001f952d0cac724c50399ae593d8359e2e7b039a6da165fd28f4c5" prot="public" virt="non-virtual"><scope>ansi_color</scope><name>ANSI_BLACK</name></member>
+      <member refid="structansi__color_1a6fbe942d64c001f952d0cac724c50399ade1d4654138babd773c072379052dd9d" prot="public" virt="non-virtual"><scope>ansi_color</scope><name>ANSI_BLUE</name></member>
+      <member refid="structansi__color_1a6fbe942d64c001f952d0cac724c50399a32fbd57ffc18c468889e008bb1c9eb94" prot="public" virt="non-virtual"><scope>ansi_color</scope><name>ANSI_CYAN</name></member>
+      <member refid="structansi__color_1a6fbe942d64c001f952d0cac724c50399abbe6a26afbccac43c526fbc7ceff17d6" prot="public" virt="non-virtual"><scope>ansi_color</scope><name>ANSI_GREEN</name></member>
+      <member refid="structansi__color_1a6fbe942d64c001f952d0cac724c50399a63479dcc4f9abbd2e9ba9ff7ace70992" prot="public" virt="non-virtual"><scope>ansi_color</scope><name>ANSI_MAGENTA</name></member>
+      <member refid="structansi__color_1a6fbe942d64c001f952d0cac724c50399a53961d25833ef0a1245ef878df173bcd" prot="public" virt="non-virtual"><scope>ansi_color</scope><name>ANSI_RED</name></member>
+      <member refid="structansi__color_1a6fbe942d64c001f952d0cac724c50399add00b767b443cb587a4488a7bb0a5be3" prot="public" virt="non-virtual"><scope>ansi_color</scope><name>ANSI_WHITE</name></member>
+      <member refid="structansi__color_1a6fbe942d64c001f952d0cac724c50399ae2cc1095be867a5a7a3e3fc955e80c64" prot="public" virt="non-virtual"><scope>ansi_color</scope><name>ANSI_YELLOW</name></member>
+      <member refid="structansi__color_1a344adcb5a905722fbfe74e24d0b97a59" prot="public" virt="non-virtual"><scope>ansi_color</scope><name>bright</name></member>
+      <member refid="structansi__color_1a4e2f6bae0231a3cc30f900ec2a308f2a" prot="public" virt="non-virtual"><scope>ansi_color</scope><name>color</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

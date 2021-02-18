@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structvga__color" kind="struct" language="C++" prot="public">
+    <compoundname>vga_color</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structvga__color_1a170a5ffb19c67f75e1bab7a836255472" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@0</name>
+        <enumvalue id="structvga__color_1a170a5ffb19c67f75e1bab7a836255472ad54e9f11bf7d3c5ec7d38e5d2c5d6f42" prot="public">
+          <name>VGA_BLACK</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structvga__color_1a170a5ffb19c67f75e1bab7a836255472a42f51d16659ca09fd51ad1b567789bb4" prot="public">
+          <name>VGA_BLUE</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structvga__color_1a170a5ffb19c67f75e1bab7a836255472a009359c46d81a5a9a2fbd7011ce78617" prot="public">
+          <name>VGA_GREEN</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structvga__color_1a170a5ffb19c67f75e1bab7a836255472a1664a80c86f55343d72dfeb644e6ef5e" prot="public">
+          <name>VGA_CYAN</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structvga__color_1a170a5ffb19c67f75e1bab7a836255472abbce404c3d2b38f803035bec63f65a2e" prot="public">
+          <name>VGA_RED</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structvga__color_1a170a5ffb19c67f75e1bab7a836255472ae4570e2b39821d2390302b5669595617" prot="public">
+          <name>VGA_MAGENTA</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structvga__color_1a170a5ffb19c67f75e1bab7a836255472a6c4822fe43f7a974c3bbe0bbdf0a12f1" prot="public">
+          <name>VGA_YELLOW</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structvga__color_1a170a5ffb19c67f75e1bab7a836255472ac7736c80fcef682cce45df254a92c8cb" prot="public">
+          <name>VGA_WHITE</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/arch/i386/vga.h" line="12" column="1" bodyfile="/home/luke/le/aspera/aspera/arch/i386/vga.h" bodystart="12" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvga__color_1a91e5cdedae3a49e4e6bbd2a0a6d00d15" prot="public" static="no" mutable="no">
+        <type>enum vga_color::@0</type>
+        <definition>enum vga_color::@0 vga_color::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/arch/i386/vga.h" line="21" column="7"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvga__color_1afd9d40833de570e52dacc3c4a55adb63" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int vga_color::bright</definition>
+        <argsstring></argsstring>
+        <name>bright</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/arch/i386/vga.h" line="22" column="14" bodyfile="/home/luke/le/aspera/aspera/arch/i386/vga.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/luke/le/aspera/aspera/arch/i386/vga.h" line="11" column="1" bodyfile="/home/luke/le/aspera/aspera/arch/i386/vga.h" bodystart="11" bodyend="23"/>
+    <listofallmembers>
+      <member refid="structvga__color_1afd9d40833de570e52dacc3c4a55adb63" prot="public" virt="non-virtual"><scope>vga_color</scope><name>bright</name></member>
+      <member refid="structvga__color_1a91e5cdedae3a49e4e6bbd2a0a6d00d15" prot="public" virt="non-virtual"><scope>vga_color</scope><name>color</name></member>
+      <member refid="structvga__color_1a170a5ffb19c67f75e1bab7a836255472ad54e9f11bf7d3c5ec7d38e5d2c5d6f42" prot="public" virt="non-virtual"><scope>vga_color</scope><name>VGA_BLACK</name></member>
+      <member refid="structvga__color_1a170a5ffb19c67f75e1bab7a836255472a42f51d16659ca09fd51ad1b567789bb4" prot="public" virt="non-virtual"><scope>vga_color</scope><name>VGA_BLUE</name></member>
+      <member refid="structvga__color_1a170a5ffb19c67f75e1bab7a836255472a1664a80c86f55343d72dfeb644e6ef5e" prot="public" virt="non-virtual"><scope>vga_color</scope><name>VGA_CYAN</name></member>
+      <member refid="structvga__color_1a170a5ffb19c67f75e1bab7a836255472a009359c46d81a5a9a2fbd7011ce78617" prot="public" virt="non-virtual"><scope>vga_color</scope><name>VGA_GREEN</name></member>
+      <member refid="structvga__color_1a170a5ffb19c67f75e1bab7a836255472ae4570e2b39821d2390302b5669595617" prot="public" virt="non-virtual"><scope>vga_color</scope><name>VGA_MAGENTA</name></member>
+      <member refid="structvga__color_1a170a5ffb19c67f75e1bab7a836255472abbce404c3d2b38f803035bec63f65a2e" prot="public" virt="non-virtual"><scope>vga_color</scope><name>VGA_RED</name></member>
+      <member refid="structvga__color_1a170a5ffb19c67f75e1bab7a836255472ac7736c80fcef682cce45df254a92c8cb" prot="public" virt="non-virtual"><scope>vga_color</scope><name>VGA_WHITE</name></member>
+      <member refid="structvga__color_1a170a5ffb19c67f75e1bab7a836255472a6c4822fe43f7a974c3bbe0bbdf0a12f1" prot="public" virt="non-virtual"><scope>vga_color</scope><name>VGA_YELLOW</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

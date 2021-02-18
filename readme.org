@@ -1,0 +1,148 @@
+#+TITLE: aspera
+* Files
+** kernel/
+aspera kernel
+*** include
+*** arch/*/
+platforms
+**** include
+**** boot/*/
+bootloader-specific code
+**** init/, fs/, etc.
+platform-specific code
+*** init/
+initialize the various builtin pseudo-modules
+load initramfs
+*** fs/
+**** vfs
+virtual file system
+**** initramfs
+*** mm/
+memory management
+** modules/
+possible contents of initramfs
+** util/
+*** mkirfs
+produce initramfs archive
+*** unirfs
+unpack initramfs archive
+** libs/
+*** liba/
+aspera liba/libk
+**** arch/*/
+platforms
+**** string
+* Spec
+** vfs
+filesystem supplies function pointers:
+    append
+    overwrite
+    read
+
+permissions:
+    0 read
+    1 write
+    2 execute
+** irfs
+all little-endian
+|           0 | header |
+|          24 | ilist  |
+| heap_offset | heap   |
+*** header
+|  0 | magic       |
+|  4 | reserved    |
+|  8 | flags       |
+| 12 | size        |
+| 16 | heap_offset |
+| 20 | icount      |
+**** magic - {'I','R','F','S'} with no null byte
+**** reserved - 0
+**** size - size of image in words
+*** ilist
+array of inodes
+inode 0 = root
+|  0 | mode      |
+|  4 | size      |
+|  8 | meta_size |
+| 12 | offset    |
+**** mode
+bytes so far:
+| 0 | type       |
+| 1 | executable |
+***** type
+0 - nonexistant (shouldn't happen because it's an archive but meh)
+1 - directory
+2 - regular file
+3 - symlink
+***** executable
+the only permission; there are no users yet, everything is readable, and nothing is writeable
+**** size - total file/dir size divided by 4 bytes, rounded up
+**** meta_size - metadata size divided by 4 bytes, rounded up
+**** offset - offset within heap section, divided by 4
+*** directory
+| 0 | . inode number  |
+| 4 | .. inode number |
+| 8 | dentry[count]   |
+**** dentries
+array of `count` dentries, sorted by filename
+| 0 | namelen      |
+| 4 | name         |
+| 8 | inode number |
+***** namelen - length of filename divided by 4, rounded up
+***** name - offset of string on heap, divided by 4
+** liba
+based on libc, with some differences
+*** mem.h
+dynamic memory management, garbage collection
+similar to libc but different
+**** void *malloc(size_t size)
+allocates, *zeros*, and returns a pointer to `size` bytes for the process
+**** void free(void *ptr)
+frees the memory pointed to by `ptr`
+**** void realloc(void *ptr, size_t size)
+resizes the memory pointed to by `ptr`, *zeroing added memory*
+*** string.h
+similar to POSIX string.h but only the string operations
+*** data.h
+all the memory functions from POSIX string.h
+
+*** file.h
+reinvention of file api, designed to avoid concurrency issues
+**** file_t
+opaque type to represent a file descriptor, including position
+**** file_t farg, fin, fout, ferr
+basically stdio and argc/v
+**** void fwrite(file_t out, void *ptr, size_t len)
+output bytes to file
+**** void fread(file_t in, void *ptr, size_t len)
+input bytes from file
+**** void fstep(file_t des, size_t len)
+move cursor forward if possible
+**** void fgo(file_t des, size_t pos)
+set position
+**** size_t fseek(file_t des, void *ptr, size_t len)
+continues until pattern or EOF, returns distance
+*** shapes/
+**** list.h
+linked list utilities
+**** tree.h
+tree utilities
+*** math/
+**** trig.h
+**** comp.h
+** libk
+liba lite
+*** mem.h
+dynamic memory management, garbage collection
+similar to libc but different
+**** void *kmalloc(size_t size)
+allocates, *zeros*, and returns a pointer to `size` bytes for the process
+**** void kfree(void *ptr)
+frees the memory pointed to by `ptr`
+**** void krealloc(void *ptr, size_t size)
+resizes the memory pointed to by `ptr`, *zeroing added memory*
+
+* Execution
+A binary file can be directly entered into the cycle of program execution.
+** Shebang (#!)
+If a file has a shebang field in its metadata, then that line is parsed to execute a different file (recursion not allowed) in its place with the first file's contents (excluding the shebang) loaded into farg.

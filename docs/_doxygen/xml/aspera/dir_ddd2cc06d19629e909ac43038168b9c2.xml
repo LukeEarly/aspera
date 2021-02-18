@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="dir_ddd2cc06d19629e909ac43038168b9c2" kind="dir">
+    <compoundname>/home/luke/le/aspera/aspera/init/irfs</compoundname>
+    <innerfile refid="header_8c">header.c</innerfile>
+    <innerfile refid="init_8c">init.c</innerfile>
+    <innerfile refid="table_8c">table.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/luke/le/aspera/aspera/init/irfs/"/>
+  </compounddef>
+</doxygen>

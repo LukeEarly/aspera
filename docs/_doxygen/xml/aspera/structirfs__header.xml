@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structirfs__header" kind="struct" language="C++" prot="public">
+    <compoundname>irfs_header</compoundname>
+    <includes refid="irfs_8h" local="no">irfs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structirfs__header_1a96d41040aac982016b49e5f5eb98a724" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t irfs_header::magic</definition>
+        <argsstring></argsstring>
+        <name>magic</name>
+        <briefdescription>
+<para>&apos;I&apos; &apos;R&apos; &apos;F&apos; &apos;S&apos; - no null </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/init/irfs.h" line="27" column="10" bodyfile="/home/luke/le/aspera/aspera/include/init/irfs.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structirfs__header_1a3dc52cd927574dbabba0083ebe381f89" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t irfs_header::reserved</definition>
+        <argsstring></argsstring>
+        <name>reserved</name>
+        <briefdescription>
+<para>0 for now </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/init/irfs.h" line="28" column="10" bodyfile="/home/luke/le/aspera/aspera/include/init/irfs.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structirfs__header_1af57b7c38597575075dc8345fd2a0e463" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t irfs_header::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+<para>0 for now </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/init/irfs.h" line="29" column="10" bodyfile="/home/luke/le/aspera/aspera/include/init/irfs.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structirfs__header_1a14bc15c7f77a466429d06edf2ca8402f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t irfs_header::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>size of image in words </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/init/irfs.h" line="30" column="10" bodyfile="/home/luke/le/aspera/aspera/include/init/irfs.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structirfs__header_1acd7dfc6a707b7feefa6904bd5763a1d9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t irfs_header::heap_offset</definition>
+        <argsstring></argsstring>
+        <name>heap_offset</name>
+        <briefdescription>
+<para>size of header + ilist in words </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/init/irfs.h" line="31" column="10" bodyfile="/home/luke/le/aspera/aspera/include/init/irfs.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structirfs__header_1a0081a52d48879911609648f9b4bad71d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t irfs_header::icount</definition>
+        <argsstring></argsstring>
+        <name>icount</name>
+        <briefdescription>
+<para>number of inodes </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/init/irfs.h" line="32" column="10" bodyfile="/home/luke/le/aspera/aspera/include/init/irfs.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>First 24 bytes of IRFS file. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/luke/le/aspera/aspera/include/init/irfs.h" line="26" column="1" bodyfile="/home/luke/le/aspera/aspera/include/init/irfs.h" bodystart="26" bodyend="33"/>
+    <listofallmembers>
+      <member refid="structirfs__header_1af57b7c38597575075dc8345fd2a0e463" prot="public" virt="non-virtual"><scope>irfs_header</scope><name>flags</name></member>
+      <member refid="structirfs__header_1acd7dfc6a707b7feefa6904bd5763a1d9" prot="public" virt="non-virtual"><scope>irfs_header</scope><name>heap_offset</name></member>
+      <member refid="structirfs__header_1a0081a52d48879911609648f9b4bad71d" prot="public" virt="non-virtual"><scope>irfs_header</scope><name>icount</name></member>
+      <member refid="structirfs__header_1a96d41040aac982016b49e5f5eb98a724" prot="public" virt="non-virtual"><scope>irfs_header</scope><name>magic</name></member>
+      <member refid="structirfs__header_1a3dc52cd927574dbabba0083ebe381f89" prot="public" virt="non-virtual"><scope>irfs_header</scope><name>reserved</name></member>
+      <member refid="structirfs__header_1a14bc15c7f77a466429d06edf2ca8402f" prot="public" virt="non-virtual"><scope>irfs_header</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

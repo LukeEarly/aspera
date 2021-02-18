@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="dir_6df1960baf5ad75bf5cc4e7c8725bcbf" kind="dir">
+    <compoundname>/home/luke/le/aspera/lib/a/string</compoundname>
+    <innerfile refid="memcmp_8c">memcmp.c</innerfile>
+    <innerfile refid="memcpy_8c">memcpy.c</innerfile>
+    <innerfile refid="memmove_8c">memmove.c</innerfile>
+    <innerfile refid="memset_8c">memset.c</innerfile>
+    <innerfile refid="strcmp_8c">strcmp.c</innerfile>
+    <innerfile refid="strlen_8c">strlen.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/luke/le/aspera/lib/a/string/"/>
+  </compounddef>
+</doxygen>

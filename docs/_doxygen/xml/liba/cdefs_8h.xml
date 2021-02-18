@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="cdefs_8h" kind="file" language="C++">
+    <compoundname>cdefs.h</compoundname>
+    <includedby refid="stdlib_8h" local="no">/home/luke/le/aspera/lib/a/include/stdlib.h</includedby>
+    <includedby refid="string_8h" local="no">/home/luke/le/aspera/lib/a/include/string.h</includedby>
+    <invincdepgraph>
+      <node id="3">
+        <label>/home/luke/le/aspera/lib/a/include/assert.h</label>
+        <link refid="assert_8h_source"/>
+      </node>
+      <node id="4">
+        <label>/home/luke/le/aspera/lib/a/include/string.h</label>
+        <link refid="string_8h_source"/>
+      </node>
+      <node id="2">
+        <label>/home/luke/le/aspera/lib/a/include/stdlib.h</label>
+        <link refid="stdlib_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/luke/le/aspera/lib/a/include/sys/cdefs.h</label>
+        <link refid="cdefs_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="cdefs_8h_1ad1989059747de14254259d2a202571f2" prot="public" static="no">
+        <name>__aspera_liba</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/lib/a/include/sys/cdefs.h" line="4" column="9" bodyfile="/home/luke/le/aspera/lib/a/include/sys/cdefs.h" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__SYS_CDEFS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SYS_CDEFS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__aspera_liba</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__SYS_CDEFS_H_</highlight></codeline>
+    </programlisting>
+    <location file="/home/luke/le/aspera/lib/a/include/sys/cdefs.h"/>
+  </compounddef>
+</doxygen>

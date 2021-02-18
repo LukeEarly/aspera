@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structphys__chunk" kind="struct" language="C++" prot="public">
+    <compoundname>phys_chunk</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structphys__chunk_1ab6fca38cd31e41be6259d977a4546ca0" prot="public" static="no" mutable="no">
+        <type>uintptr_t</type>
+        <definition>uintptr_t phys_chunk::start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/mm/phys.h" line="7" column="11" bodyfile="/home/luke/le/aspera/aspera/include/mm/phys.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structphys__chunk_1ab27961f59d8768034c78ba185658d0c1" prot="public" static="no" mutable="no">
+        <type>uintptr_t</type>
+        <definition>uintptr_t phys_chunk::len</definition>
+        <argsstring></argsstring>
+        <name>len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/include/mm/phys.h" line="8" column="11" bodyfile="/home/luke/le/aspera/aspera/include/mm/phys.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/luke/le/aspera/aspera/include/mm/phys.h" line="6" column="1" bodyfile="/home/luke/le/aspera/aspera/include/mm/phys.h" bodystart="6" bodyend="9"/>
+    <listofallmembers>
+      <member refid="structphys__chunk_1ab27961f59d8768034c78ba185658d0c1" prot="public" virt="non-virtual"><scope>phys_chunk</scope><name>len</name></member>
+      <member refid="structphys__chunk_1ab6fca38cd31e41be6259d977a4546ca0" prot="public" virt="non-virtual"><scope>phys_chunk</scope><name>start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="vga_8h" kind="file" language="C++">
+    <compoundname>vga.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stddef.h</includes>
+    <includedby refid="tty_8c" local="yes">/home/luke/le/aspera/aspera/arch/i386/tty.c</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+      <node id="3">
+        <label>stddef.h</label>
+      </node>
+      <node id="1">
+        <label>/home/luke/le/aspera/aspera/arch/i386/vga.h</label>
+        <link refid="vga_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structvga__color" prot="public">vga_color</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="vga_8h_1a7e5abf7be634adf4e3c22e589924ea34" prot="public" static="no">
+        <name>VGA_WIDTH</name>
+        <initializer>80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/arch/i386/vga.h" line="7" column="9" bodyfile="/home/luke/le/aspera/aspera/arch/i386/vga.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vga_8h_1a1dc3cb2af110f40260e1b2256b6fa214" prot="public" static="no">
+        <name>VGA_HEIGHT</name>
+        <initializer>25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/arch/i386/vga.h" line="8" column="9" bodyfile="/home/luke/le/aspera/aspera/arch/i386/vga.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="vga_8h_1ab04751fad2d248717c6a343a9762610c" prot="public" static="no">
+        <name>VGA_MEM</name>
+        <initializer>0xb8000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/arch/i386/vga.h" line="9" column="9" bodyfile="/home/luke/le/aspera/aspera/arch/i386/vga.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="vga_8h_1a6af02a2aa9e9037673f33967d6467aa8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>static uint8_t vga_color_byte</definition>
+        <argsstring>(struct vga_color fg, struct vga_color bg)</argsstring>
+        <name>vga_color_byte</name>
+        <param>
+          <type>struct <ref refid="structvga__color" kindref="compound">vga_color</ref></type>
+          <declname>fg</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structvga__color" kindref="compound">vga_color</ref></type>
+          <declname>bg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/arch/i386/vga.h" line="25" column="23" bodyfile="/home/luke/le/aspera/aspera/arch/i386/vga.h" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="vga_8h_1a7e4a2ac1d9ce5a194fcf96d0082d268f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>static uint16_t vga_char</definition>
+        <argsstring>(unsigned char c, uint8_t color)</argsstring>
+        <name>vga_char</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/arch/i386/vga.h" line="29" column="24" bodyfile="/home/luke/le/aspera/aspera/arch/i386/vga.h" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="vga_8h_1a106a1b2f8de1658c4481530cad889895" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t vga_index</definition>
+        <argsstring>(size_t x, size_t y)</argsstring>
+        <name>vga_index</name>
+        <param>
+          <type>size_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/luke/le/aspera/aspera/arch/i386/vga.h" line="33" column="22" bodyfile="/home/luke/le/aspera/aspera/arch/i386/vga.h" bodystart="33" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__VGA_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__VGA_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VGA_WIDTH<sp/>80</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VGA_HEIGHT<sp/>25</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VGA_MEM<sp/>0xb8000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="structvga__color" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structvga__color" kindref="compound">vga_color</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VGA_BLACK<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VGA_BLUE<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VGA_GREEN<sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VGA_CYAN<sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VGA_RED<sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VGA_MAGENTA<sp/>=<sp/>5,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VGA_YELLOW<sp/>=<sp/>6,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VGA_WHITE<sp/>=<sp/>7</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>color;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bright<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint8_t<sp/>vga_color_byte(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structvga__color" kindref="compound">vga_color</ref><sp/>fg,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structvga__color" kindref="compound">vga_color</ref><sp/>bg)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>fg.color<sp/>|<sp/>fg.bright<sp/>&lt;&lt;<sp/>3<sp/>|<sp/>bg.color<sp/>&lt;&lt;<sp/>4<sp/>|<sp/>bg.bright<sp/>&lt;&lt;<sp/>7;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint16_t<sp/>vga_char(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c,<sp/>uint8_t<sp/>color)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(uint16_t)<sp/>c<sp/>|<sp/>(uint16_t)<sp/>color<sp/>&lt;&lt;<sp/>8;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>vga_index(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>y)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x<sp/>+<sp/>VGA_WIDTH<sp/>*<sp/>y;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__VGA_H_</highlight></codeline>
+    </programlisting>
+    <location file="/home/luke/le/aspera/aspera/arch/i386/vga.h"/>
+  </compounddef>
+</doxygen>
