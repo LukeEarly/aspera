@@ -62,7 +62,6 @@ all: aspera
 
 aspera: $(OBJS) $(LDSCRIPT)
 	$(CC) -T $(LDSCRIPT) -o $@ $(CFLAGS) $(IUNGENDA)
-	grub-file --is-x86-multiboot $@
 
 $(ARCHDIR)/crtbegin.o $(ARCHDIR)/crtend.o:
 	OBJ=`$(CC) $(CFLAGS) $(LDFLAGS) -print-file-name=$(@F)` && cp "$$OBJ" $@

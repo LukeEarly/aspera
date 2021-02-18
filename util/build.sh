@@ -15,10 +15,17 @@ cd ../lib/a &&
 make install-headers &&
 make install-libs &&
 cd ../../aspera &&
-make install-kernel &&
+make install-multiboot &&
 cd .. &&
-mkdir -p build/sysroot/boot/grub &&
-cp aspera/arch/i386/boot/multiboot/grub.cfg build/sysroot/boot/grub/grub.cfg &&
+#mkdir -p build/sysroot/boot/grub &&
+#cp aspera/arch/i386/boot/multiboot/grub.cfg build/sysroot/boot/grub/grub.cfg &&
+
+cd util/mkirfs &&
+make &&
+cd ../../initram &&
+../util/mkirfs/mkirfs &&
+cd .. &&
+mv initram/irfs build/ &&
 cp build/irfs build/sysroot/boot/irfs &&
-cp -r build/sysroot/boot build/isodir &&
-grub-mkrescue -o build/aspera.iso build/isodir
+
+grub-mkrescue -o build/aspera.iso build/sysroot

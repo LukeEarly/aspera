@@ -1,6 +1,7 @@
 *.o
 *.d
 *.a
+aspera/aspera
 build/
 bochsrc
 bx_enh_dbg.ini
