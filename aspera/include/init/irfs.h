@@ -16,14 +16,17 @@
  * A chunk of memory that stores the IRFS.
  */
 struct irfs_mem {
-	uint32_t *start; /**< pointer to the start of the image */
-	uintptr_t length; /**< length in bytes */
+	//uint32_t *start; /**< pointer to the start of the image */
+	uintptr_t length; /**< length of image in bytes */
+	struct irfs_header *header; /**< pointer to the start of the image (6-word header) */
+	struct irfs_inode *ilist; /**< pointer to list of inodes */
+	uint32_t *heap; /**< pointer to base of heap */
 };
 
 /**
  * First 24 bytes of IRFS file.
  */
-struct irfs_header {
+struct __attribute__((__packed__)) irfs_header {
 	uint32_t magic; /**< 'I' 'R' 'F' 'S' - no null */
 	uint32_t reserved; /**< 0 for now */
 	uint32_t flags; /**< 0 for now */
@@ -35,8 +38,9 @@ struct irfs_header {
 /**
  * An entry in the ilist.
  */
-struct irfs_inode {
-	uint32_t mode; /**< permissions and type */
+struct __attribute__((__packed__)) irfs_inode {
+	uint8_t type; /**< permissions and type */
+	uint8_t priv; /**< permissions and type */
 	uint32_t size; /**< size of entire file, in words */
 	uint32_t meta_size; /**< size of metadata, in words */
 	uint32_t offset; /**< offset of metadata from start of heap, in words */
@@ -45,10 +49,19 @@ struct irfs_inode {
 /**
  * Entry in directory table
  */
-struct irfs_dirent {
+struct __attribute__((__packed__)) irfs_dirent {
 	uint32_t namelen; /**< length of name, in words */
 	uint32_t nameptr; /**< offset of name from start of heap, in words */
 	uint32_t inode; /**< inode number */
+};
+
+/**
+ * Directory table
+ */
+struct irfs_dtable {
+	uint32_t self; /**< inode of .*/
+	uint32_t parent; /**< inode of ..*/
+	struct irfs_dirent entries[];
 };
 
 /**
@@ -62,11 +75,10 @@ struct irfs_mem irfs_addr();
  * @return 1 if matches, 0 if not
  */
 int irfs_check_magic(struct irfs_mem mem);
+
 /**
- * Populates the struct with the values of the header.
- * @param mem memory location and size of image.
- * @return a struct of the header values
+ * Finds the inode of a directory entry
  */
-struct irfs_header irfs_parse_header(struct irfs_mem mem);
+struct irfs_inode *irfs_getdirent(struct irfs_mem mem, struct irfs_inode *dir, char *name);
 
 #endif // __IRFS_H_

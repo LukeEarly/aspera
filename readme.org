@@ -3,6 +3,16 @@
 ** kernel/
 aspera kernel
 *** include
+**** kmem.h
+dynamic memory management, garbage collection
+similar to libc but different
+***** void *kmalloc(size_t size)
+allocates, *zeros*, and returns a pointer to `size` bytes for the process
+***** void kfree(void *ptr)
+frees the memory pointed to by `ptr`
+***** void *krealloc(void *ptr, size_t size)
+resizes the memory pointed to by `ptr`, *zeroing added memory*
+
 *** arch/*/
 platforms
 **** include
@@ -67,8 +77,10 @@ inode 0 = root
 | 12 | offset    |
 **** mode
 bytes so far:
-| 0 | type       |
-| 1 | executable |
+| 0 | type  |
+| 1 | user  |
+| 2 | group |
+| 3 | other |
 ***** type
 0 - nonexistant (shouldn't happen because it's an archive but meh)
 1 - directory
@@ -99,7 +111,7 @@ similar to libc but different
 allocates, *zeros*, and returns a pointer to `size` bytes for the process
 **** void free(void *ptr)
 frees the memory pointed to by `ptr`
-**** void realloc(void *ptr, size_t size)
+**** void *realloc(void *ptr, size_t size)
 resizes the memory pointed to by `ptr`, *zeroing added memory*
 *** string.h
 similar to POSIX string.h but only the string operations
@@ -132,16 +144,8 @@ tree utilities
 **** comp.h
 ** libk
 liba lite
-*** mem.h
-dynamic memory management, garbage collection
-similar to libc but different
-**** void *kmalloc(size_t size)
-allocates, *zeros*, and returns a pointer to `size` bytes for the process
-**** void kfree(void *ptr)
-frees the memory pointed to by `ptr`
-**** void krealloc(void *ptr, size_t size)
-resizes the memory pointed to by `ptr`, *zeroing added memory*
-
+*** string.h
+*** data.h
 * Execution
 A binary file can be directly entered into the cycle of program execution.
 ** Shebang (#!)
