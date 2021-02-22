@@ -41,9 +41,10 @@ void print_flags(uint32_t flags)
 {
 	for (size_t i = 0; i < 13; i++) {
 		if (flags & (1 << i)) {
-			terminal_printf("%s\n", FLAG_STRINGS[i]);
+			terminal_printf("%s ", FLAG_STRINGS[i]);
 		}
 	}
+    terminal_putchar('\n');
 }
 
 void map_mem(uint32_t len, void *addr)
@@ -78,7 +79,7 @@ void boot_check(uint32_t magic, uint32_t *info)
 		multiboot_info[i] = info8[i];
 	}
 	#ifdef __debug
-	terminal_printf("magic: $X", magic);
+	terminal_printf("magic: %X\n", magic);
 	print_flags(info[0]);
 	terminal_printf("flags: %X\nmem_lower: %X\nmem_upper: %X\nboot_device: %X\ncmdline: %s\nmmap_length: %X\nmmap_addr: %X\nbootloader: %s\n",
 					info[0], info[1], info[2], info[3], info[4], info[11], info[12], info[16]);

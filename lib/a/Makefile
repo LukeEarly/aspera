@@ -30,6 +30,7 @@ $(ARCH_LK_OBJS) \
 stdlib/abort.o \
 string/memcmp.o \
 string/strcmp.o \
+string/strncmp.o \
 string/memcpy.o \
 string/memmove.o \
 string/memset.o \

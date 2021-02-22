@@ -32,7 +32,6 @@ char *strchr(const char *str, int c);
 
 int strcmp(const char *str1, const char *str2);
 
-// TODO implement
 int strncmp(const char *str1, const char *str2, size_t size);
 
 // TODO implement

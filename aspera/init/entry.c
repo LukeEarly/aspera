@@ -6,6 +6,6 @@ void kernel_entry(void)
 {
 	terminal_puts("aspera\nan operating system\n");
 	//init_mm();
-	init_irfs();
+	//init_irfs();
 	abort();
 }

@@ -12,10 +12,13 @@ struct irfs_mem irfs_addr() {
 	for (size_t i = 0; i < count; i++) {
 		uint32_t *modstruct = modarr + 16*i;
 		uint32_t start = modstruct[0];
+		struct irfs_header *header = (struct irfs_header *) start;
 		uint32_t end = modstruct[1];
 		struct irfs_mem mem = (struct irfs_mem) {
-			.start = (uint32_t *) start,
-			.length = (uintptr_t) (end - start)
+			.length = (uintptr_t) (end - start),
+			.header = header,
+			.ilist = (struct irfs_node *) (header + 1),
+			.heap = ((uint32_t *) header + header->heap_offset)
 		};
 		if (mem.length > 12 && irfs_check_magic(mem)) {
 			return mem;
