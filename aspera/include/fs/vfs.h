@@ -12,12 +12,14 @@ struct fs {
 	size_t (*read)(void *buf, size_t size, size_t count, FILE *stream);
 	int (*exec)(int argc, void **argv, FILE *file);
 };
-ruct fperm {
+
+struct fperm {
 	int l : 1;
 	int r : 1;
 	int w : 1;
 	int x : 1;
 };
+
 FILE *file_req(const char *path, struct fperm perm);
 int file_open_req(FILE *file);
 int file_open_reqs(int filec, FILE **filev);
