@@ -1,6 +1,6 @@
 #+TITLE: aspera
 * Files
-** kernel/
+** aspera/
 aspera kernel
 *** include
 **** kmem.h
@@ -36,8 +36,8 @@ possible contents of initramfs
 produce initramfs archive
 *** unirfs
 unpack initramfs archive
-** libs/
-*** liba/
+** lib/
+*** a/
 aspera liba/libk
 **** arch/*/
 platforms
